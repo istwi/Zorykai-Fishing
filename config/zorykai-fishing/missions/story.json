@@ -1,0 +1,27 @@
+{
+  "values": [
+    {
+      "id": "primeira_venda",
+      "name": "Pescador comerciante",
+      "period": "STORY",
+      "objective": "SELL",
+      "target": 10,
+      "reward": {
+        "money": 1000,
+        "xp": 200
+      }
+    },
+    {
+      "id": "explorador_oceano",
+      "name": "Explorador do Oceano",
+      "period": "STORY",
+      "objective": "LEVEL",
+      "target": 25,
+      "reward": {
+        "unlock": "oceano_profundo",
+        "xp": 500
+      }
+    }
+  ],
+  "schemaVersion": 1
+}

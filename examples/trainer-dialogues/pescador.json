@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "pescador",
+  "title": "&bMarina &7| Guardiã dos Lagos",
+  "startPage": "inicio",
+  "timeoutSeconds": 120,
+  "pages": [
+    {
+      "id": "inicio",
+      "speaker": "npc",
+      "text": "&bOlá, %player%!&7\nSou Marina, cuidadora dos lagos de Zorykai. Aqui, cada encontro tem sua história — e cada pescador, seu próprio armazém.\nExplore a construção à vontade. Alguns lagos exigem experiência ou missões para pescar.\nAo entrar, seus pertences ficam reservados com segurança. Use /pesca sair para recuperá-los.",
+      "buttons": [
+        {
+          "id": "armazem",
+          "label": "Começar",
+          "action": "command",
+          "executor": "console",
+          "command": "pesca abrir main %player%"
+        },
+        {
+          "id": "areas",
+          "label": "Lagos",
+          "action": "command",
+          "executor": "console",
+          "command": "pesca abrir areas %player%"
+        },
+        {
+          "id": "sair",
+          "label": "Até mais",
+          "action": "close"
+        }
+      ]
+    }
+  ]
+}

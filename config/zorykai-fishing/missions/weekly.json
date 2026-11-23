@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "pescador_semanal",
+      "name": "Uma semana no lago",
+      "period": "WEEKLY",
+      "objective": "CAPTURE",
+      "target": 50,
+      "reward": {
+        "money": 5000,
+        "xp": 500
+      }
+    }
+  ],
+  "schemaVersion": 1
+}

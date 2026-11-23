@@ -1,0 +1,7 @@
+{
+  "trainers": true,
+  "menus": true,
+  "guard": true,
+  "multiworld": true,
+  "schemaVersion": 1
+}

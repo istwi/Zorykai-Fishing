@@ -1,0 +1,26 @@
+{
+  "values": [
+    {
+      "id": "dez",
+      "name": "10 minutos",
+      "minutes": 10,
+      "validHours": 24,
+      "price": 2000
+    },
+    {
+      "id": "trinta",
+      "name": "30 minutos",
+      "minutes": 30,
+      "validHours": 24,
+      "price": 5000
+    },
+    {
+      "id": "sessenta",
+      "name": "60 minutos",
+      "minutes": 60,
+      "validHours": 24,
+      "price": 9000
+    }
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,38 @@
+{
+  "values": [
+    {
+      "id": "inicial",
+      "name": "Vara Inicial",
+      "rarity": "common",
+      "minimumLevel": 1,
+      "price": 0,
+      "waitSeconds": 15,
+      "luck": 1,
+      "resistance": 1,
+      "precision": 1
+    },
+    {
+      "id": "boa",
+      "name": "Vara de Carvalho",
+      "rarity": "uncommon",
+      "minimumLevel": 10,
+      "price": 15000,
+      "waitSeconds": 12,
+      "luck": 1.15,
+      "resistance": 1.2,
+      "precision": 1.1
+    },
+    {
+      "id": "super",
+      "name": "Vara das Marés",
+      "rarity": "rare",
+      "minimumLevel": 25,
+      "price": 50000,
+      "waitSeconds": 9,
+      "luck": 1.4,
+      "resistance": 1.5,
+      "precision": 1.3
+    }
+  ],
+  "schemaVersion": 1
+}

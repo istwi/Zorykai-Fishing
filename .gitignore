@@ -1,0 +1,9 @@
+.gradle/
+build/
+libs/*.jar
+audit/*
+!audit/run_native.py
+!audit/run_restart.py
+!audit/package_release.py
+run/
+*.sqlite*

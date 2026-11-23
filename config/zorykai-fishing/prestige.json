@@ -1,0 +1,6 @@
+{
+  "enabled": false,
+  "maximumPrestige": 100,
+  "xpBonusPerPrestige": 0.02,
+  "schemaVersion": 1
+}

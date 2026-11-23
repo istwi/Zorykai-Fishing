@@ -1,0 +1,30 @@
+{
+  "values": [
+    {
+      "id": "basica",
+      "name": "Bola de Pesca",
+      "item": "cobblemon:poke_ball",
+      "price": 0,
+      "amount": 1,
+      "infinite": true,
+      "captureChance": 0.55
+    },
+    {
+      "id": "boa",
+      "name": "Bola das Marés",
+      "item": "cobblemon:great_ball",
+      "price": 500,
+      "amount": 10,
+      "captureChance": 0.75
+    },
+    {
+      "id": "super",
+      "name": "Bola Abissal",
+      "item": "cobblemon:ultra_ball",
+      "price": 1500,
+      "amount": 10,
+      "captureChance": 0.9
+    }
+  ],
+  "schemaVersion": 1
+}

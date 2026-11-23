@@ -1,0 +1,29 @@
+{
+  "values": [
+    {
+      "id": "speed",
+      "name": "Carretilha",
+      "price": 3000,
+      "maximumLevel": 5
+    },
+    {
+      "id": "luck",
+      "name": "Anzol",
+      "price": 4000,
+      "maximumLevel": 5
+    },
+    {
+      "id": "resistance",
+      "name": "Linha reforçada",
+      "price": 2500,
+      "maximumLevel": 5
+    },
+    {
+      "id": "precision",
+      "name": "Empunhadura",
+      "price": 2500,
+      "maximumLevel": 5
+    }
+  ],
+  "schemaVersion": 1
+}

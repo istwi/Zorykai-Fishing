@@ -1,0 +1,18 @@
+[
+  {
+    "name": "New JVM reads pending Fishing recovery from durable SQLite",
+    "passed": true
+  },
+  {
+    "name": "After actual process kill native login restores original inventory before JOIN",
+    "passed": true
+  },
+  {
+    "name": "Post-crash recovery preserves armor offhand XP and clears only verified reservation",
+    "passed": true
+  },
+  {
+    "name": "Repeated login after crash does not duplicate inventory",
+    "passed": true
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "normalMinutes": 60,
+  "cycleHours": 24,
+  "maximumAccumulatedMinutes": 360,
+  "actionbar": true,
+  "warnings": [
+    900,
+    300,
+    60,
+    30,
+    10
+  ],
+  "schemaVersion": 1
+}

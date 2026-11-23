@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "missoes",
+  "title": "&bCaio | Expedições",
+  "startPage": "inicio",
+  "timeoutSeconds": 120,
+  "pages": [
+    {
+      "id": "inicio",
+      "speaker": "npc",
+      "text": "&bOlá, %player%!&7\nOs lagos de Zorykai sempre guardam uma surpresa. Vamos preparar sua próxima aventura?",
+      "buttons": [
+        {
+          "id": "abrir",
+          "label": "Vamos lá",
+          "action": "command",
+          "executor": "console",
+          "command": "pesca abrir missoes %player%"
+        },
+        {
+          "id": "sair",
+          "label": "Até mais",
+          "action": "close"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "shinyChance": 0.000244140625,
+  "escapeChance": 0.08,
+  "clickProgress": 20,
+  "clickTension": 22,
+  "tensionDecayPerSecond": 12,
+  "minimumReelTicks": 5,
+  "lineExpirySeconds": 120,
+  "treasureChance": 0.05,
+  "schemaVersion": 1
+}

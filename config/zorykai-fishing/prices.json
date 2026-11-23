@@ -1,0 +1,16 @@
+{
+  "base": 250,
+  "rare": 1500,
+  "legendary": 10000,
+  "maximum": 100000,
+  "shinyMultiplier": 2,
+  "sizeExponent": 2,
+  "species": {
+    "magikarp": 250,
+    "goldeen": 350,
+    "poliwag": 400,
+    "wooper": 500,
+    "feebas": 1500
+  },
+  "schemaVersion": 1
+}

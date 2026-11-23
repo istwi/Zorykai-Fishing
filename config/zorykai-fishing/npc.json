@@ -1,0 +1,14 @@
+{
+  "consoleCommand": "pesca abrir \u003cmenu\u003e \u003cjogador\u003e",
+  "menus": [
+    "venda",
+    "varas",
+    "iscas",
+    "pokebolas",
+    "melhorias",
+    "missoes",
+    "torneios",
+    "recompensas"
+  ],
+  "schemaVersion": 1
+}

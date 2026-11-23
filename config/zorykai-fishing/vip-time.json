@@ -1,0 +1,25 @@
+{
+  "values": [
+    {
+      "id": "magma",
+      "permission": "zorykai_fishing.vip.magma",
+      "minutes": 72
+    },
+    {
+      "id": "aqua",
+      "permission": "zorykai_fishing.vip.aqua",
+      "minutes": 86
+    },
+    {
+      "id": "plasma",
+      "permission": "zorykai_fishing.vip.plasma",
+      "minutes": 103
+    },
+    {
+      "id": "galactic",
+      "permission": "zorykai_fishing.vip.galactic",
+      "minutes": 124
+    }
+  ],
+  "schemaVersion": 1
+}

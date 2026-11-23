@@ -1,0 +1,16 @@
+{
+  "allowed": [
+    "pesca",
+    "login",
+    "l",
+    "logar",
+    "register",
+    "reg",
+    "registrar",
+    "2fa",
+    "auth",
+    "pin"
+  ],
+  "adminBypassPermission": "zorykai_fishing.bypass",
+  "schemaVersion": 1
+}

@@ -1,0 +1,8 @@
+{
+  "initialCapacity": 30,
+  "maximumCapacity": 300,
+  "expansionSlots": 10,
+  "expansionPrice": 10000,
+  "maximumBatchSale": 100,
+  "schemaVersion": 1
+}

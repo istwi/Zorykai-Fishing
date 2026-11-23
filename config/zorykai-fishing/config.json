@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "debugCaptureEnabled": false,
+  "storageCapacity": 30,
+  "encounterSeconds": 120,
+  "menuId": "fishing_main"
+}

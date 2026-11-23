@@ -1,0 +1,8 @@
+{
+  "maximumLevel": 100,
+  "baseXp": 100,
+  "growth": 1.13,
+  "captureXp": 25,
+  "rodCaptureXp": 20,
+  "schemaVersion": 1
+}

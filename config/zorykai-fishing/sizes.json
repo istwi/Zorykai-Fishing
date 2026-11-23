@@ -1,0 +1,9 @@
+{
+  "minimumMultiplier": 0.6,
+  "maximumMultiplier": 2.5,
+  "large": 1.2,
+  "giant": 1.6,
+  "record": 2.1,
+  "maximumVisualScale": 3,
+  "schemaVersion": 1
+}

@@ -1,0 +1,1 @@
+Dependências locais de compilação (não redistribuídas neste pacote): cobblemon.jar (1.8.3 para MC1.21.1), zorykaimenus.jar (API validada em 1.3.6), impactor.jar (API validada em 5.3.5). Renomeie cópias desses JARs para os nomes indicados. Somente SQLite e Fabric Permissions API são incorporados ao JAR final; as demais dependências permanecem mods separados no servidor.

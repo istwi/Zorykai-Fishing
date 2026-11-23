@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "mares_favoraveis",
+      "name": "Marés favoráveis",
+      "durationSeconds": 900,
+      "automaticIntervalSeconds": 0,
+      "sizeMultiplier": 1.2,
+      "xpMultiplier": 1.5,
+      "shinyMultiplier": 2,
+      "rareMultiplier": 1.3,
+      "lakes": []
+    }
+  ],
+  "schemaVersion": 1
+}

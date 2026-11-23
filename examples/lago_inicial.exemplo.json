@@ -1,0 +1,38 @@
+{
+  "id": "lago_inicial",
+  "name": "Lago inicial",
+  "map": "mapa",
+  "dimension": "multiworld:pesca",
+  "bounds": {
+    "minX": 10,
+    "minY": 60,
+    "minZ": 10,
+    "maxX": 30,
+    "maxY": 70,
+    "maxZ": 30
+  },
+  "minimumLevel": 1,
+  "permission": null,
+  "pokemon": [
+    {
+      "species": "magikarp",
+      "chance": 45
+    },
+    {
+      "species": "goldeen",
+      "chance": 30
+    },
+    {
+      "species": "poliwag",
+      "chance": 15
+    },
+    {
+      "species": "wooper",
+      "chance": 8
+    },
+    {
+      "species": "feebas",
+      "chance": 2
+    }
+  ]
+}

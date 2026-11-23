@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "package": "com.zorykai.fishing.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "LoginRecoveryMixin",
+    "PlayerProtectionMixin",
+    "NetworkProtectionMixin",
+    "PickupProtectionMixin",
+    "CommandProtectionMixin",
+    "GuardRecoveryMixin",
+    "PlayerSaveInvoker",
+    "FishingBallMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "blockExternalTransfers": true,
+  "quarantineUnexpectedItems": true,
+  "schemaVersion": 1
+}

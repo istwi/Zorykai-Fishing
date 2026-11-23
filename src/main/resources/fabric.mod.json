@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "zorykai_fishing",
+  "version": "${version}",
+  "name": "Zorykai Fishing",
+  "description": "Pesca exclusiva com sess\u00f5es, recupera\u00e7\u00e3o, equipamentos, progress\u00e3o e armaz\u00e9m pr\u00f3prio.",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.zorykai.fishing.FishingMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "cobblemon": "1.8.3+1.21.1"
+  },
+  "suggests": {
+    "shirokai_trainers": "*",
+    "shirokai_guard": "*",
+    "zorykaimenus": "*",
+    "multiworld": "1.13.1"
+  },
+  "mixins": [
+    "zorykai-fishing.mixins.json"
+  ]
+}

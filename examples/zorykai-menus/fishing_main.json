@@ -1,0 +1,202 @@
+{
+  "id": "fishing_main",
+  "title": "<aqua>✦ ZORYKAI · Pesca",
+  "size": 54,
+  "buttons": [
+    {
+      "id": "entrar",
+      "slots": [
+        9
+      ],
+      "icon": {
+        "id": "minecraft:fishing_rod"
+      },
+      "name": "<aqua>Entrar na pesca",
+      "actions": [
+        {
+          "type": "zorykai_fishing:entrar"
+        }
+      ]
+    },
+    {
+      "id": "sair",
+      "slots": [
+        10
+      ],
+      "icon": {
+        "id": "minecraft:oak_door"
+      },
+      "name": "<aqua>Sair e restaurar inventário",
+      "actions": [
+        {
+          "type": "zorykai_fishing:sair"
+        }
+      ]
+    },
+    {
+      "id": "armazem",
+      "slots": [
+        11
+      ],
+      "icon": {
+        "id": "minecraft:chest"
+      },
+      "name": "<aqua>Capturas e vendas",
+      "actions": [
+        {
+          "type": "zorykai_fishing:armazem"
+        }
+      ]
+    },
+    {
+      "id": "areas",
+      "slots": [
+        12
+      ],
+      "icon": {
+        "id": "minecraft:map"
+      },
+      "name": "<aqua>Lagos e requisitos",
+      "actions": [
+        {
+          "type": "zorykai_fishing:areas"
+        }
+      ]
+    },
+    {
+      "id": "varas",
+      "slots": [
+        13
+      ],
+      "icon": {
+        "id": "minecraft:fishing_rod"
+      },
+      "name": "<aqua>Varas",
+      "actions": [
+        {
+          "type": "zorykai_fishing:varas"
+        }
+      ]
+    },
+    {
+      "id": "iscas",
+      "slots": [
+        14
+      ],
+      "icon": {
+        "id": "minecraft:wheat_seeds"
+      },
+      "name": "<aqua>Iscas",
+      "actions": [
+        {
+          "type": "zorykai_fishing:iscas"
+        }
+      ]
+    },
+    {
+      "id": "bolas",
+      "slots": [
+        15
+      ],
+      "icon": {
+        "id": "cobblemon:poke_ball"
+      },
+      "name": "<aqua>Bolas de pesca",
+      "actions": [
+        {
+          "type": "zorykai_fishing:bolas"
+        }
+      ]
+    },
+    {
+      "id": "melhorias",
+      "slots": [
+        16
+      ],
+      "icon": {
+        "id": "minecraft:anvil"
+      },
+      "name": "<aqua>Melhorias",
+      "actions": [
+        {
+          "type": "zorykai_fishing:melhorias"
+        }
+      ]
+    },
+    {
+      "id": "tempo",
+      "slots": [
+        17
+      ],
+      "icon": {
+        "id": "minecraft:clock"
+      },
+      "name": "<aqua>Comprar tempo",
+      "actions": [
+        {
+          "type": "zorykai_fishing:tempo"
+        }
+      ]
+    },
+    {
+      "id": "missoes",
+      "slots": [
+        18
+      ],
+      "icon": {
+        "id": "minecraft:book"
+      },
+      "name": "<aqua>Missões",
+      "actions": [
+        {
+          "type": "zorykai_fishing:missoes"
+        }
+      ]
+    },
+    {
+      "id": "torneios",
+      "slots": [
+        19
+      ],
+      "icon": {
+        "id": "minecraft:gold_ingot"
+      },
+      "name": "<aqua>Torneios",
+      "actions": [
+        {
+          "type": "zorykai_fishing:torneios"
+        }
+      ]
+    },
+    {
+      "id": "conquistas",
+      "slots": [
+        20
+      ],
+      "icon": {
+        "id": "minecraft:golden_apple"
+      },
+      "name": "<aqua>Conquistas",
+      "actions": [
+        {
+          "type": "zorykai_fishing:conquistas"
+        }
+      ]
+    },
+    {
+      "id": "perfil",
+      "slots": [
+        21
+      ],
+      "icon": {
+        "id": "minecraft:name_tag"
+      },
+      "name": "<aqua>Meu perfil",
+      "actions": [
+        {
+          "type": "zorykai_fishing:perfil"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "values": [
+    {
+      "id": "maior_peixe",
+      "name": "O maior do lago",
+      "metric": "LARGEST",
+      "durationSeconds": 600,
+      "automaticIntervalSeconds": 21600,
+      "minimumPlayers": 1,
+      "rewards": [
+        5000,
+        2500,
+        1000
+      ]
+    },
+    {
+      "id": "cardume",
+      "name": "Festival do cardume",
+      "metric": "QUANTITY",
+      "durationSeconds": 600,
+      "automaticIntervalSeconds": 0,
+      "minimumPlayers": 1,
+      "rewards": [
+        5000,
+        2500,
+        1000
+      ]
+    }
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "primeiros_passos",
+      "name": "Primeiros passos",
+      "stat": "captures",
+      "target": 10,
+      "reward": {
+        "xp": 100
+      }
+    },
+    {
+      "id": "colecionador",
+      "name": "Colecionador",
+      "stat": "species",
+      "target": 5,
+      "reward": {
+        "minutes": 10
+      }
+    },
+    {
+      "id": "brilhante",
+      "name": "Um brilho no lago",
+      "stat": "shiny",
+      "target": 1,
+      "reward": {
+        "money": 5000
+      }
+    }
+  ],
+  "schemaVersion": 1
+}

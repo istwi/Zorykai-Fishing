@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Fresh server remains unconfigured and creates no fishing dimension",
+    "passed": true
+  },
+  {
+    "name": "Entering an unconfigured map does not modify inventory",
+    "passed": true
+  },
+  {
+    "name": "General perimeter and internal lake reload in order",
+    "passed": true
+  },
+  {
+    "name": "Reload preserves customized lake definition",
+    "passed": true
+  },
+  {
+    "name": "Real Cobblemon entity appears in registered water",
+    "passed": true
+  },
+  {
+    "name": "Native capture is disabled before the entity enters the world",
+    "passed": true
+  },
+  {
+    "name": "Native thrown-ball hit event is canceled for protected fishing entity",
+    "passed": true
+  },
+  {
+    "name": "Fishing Pokemon seen event does not advance official dex",
+    "passed": true
+  },
+  {
+    "name": "Ordinary Pokemon seen event is unaffected",
+    "passed": true
+  },
+  {
+    "name": "Another player cannot capture the encounter",
+    "passed": true
+  },
+  {
+    "name": "Foreign capture writes nothing",
+    "passed": true
+  },
+  {
+    "name": "Owner capture commits exclusive storage",
+    "passed": true
+  },
+  {
+    "name": "Repeated capture is idempotent",
+    "passed": true
+  },
+  {
+    "name": "Captured display entity is removed after successful storage",
+    "passed": true
+  },
+  {
+    "name": "Party including pre-existing Pokemon remains unchanged",
+    "passed": true
+  },
+  {
+    "name": "PC including pre-existing Pokemon remains unchanged",
+    "passed": true
+  },
+  {
+    "name": "No native PokemonCapturedEvent was emitted",
+    "passed": true
+  },
+  {
+    "name": "Player items are preserved",
+    "passed": true
+  },
+  {
+    "name": "Storage menu opens with actual capture data",
+    "passed": true
+  },
+  {
+    "name": "Storage UI cannot move Pokemon records as items",
+    "passed": true
+  },
+  {
+    "name": "Full storage refuses capture without deleting encounter",
+    "passed": true
+  },
+  {
+    "name": "Explicit encounter expiry removes entity without extra capture",
+    "passed": true
+  },
+  {
+    "name": "Capture persists through an independent SQLite connection",
+    "passed": true
+  },
+  {
+    "name": "Exact supplied Multiworld 1.13.1 loaded",
+    "passed": true
+  },
+  {
+    "name": "Real Zorykai menu API contains registered Fishing storage action",
+    "passed": true
+  },
+  {
+    "name": "External Fishing menu validates at startup independent of SERVER_STARTED order",
+    "passed": true
+  }
+]

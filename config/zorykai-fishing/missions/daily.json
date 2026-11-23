@@ -1,0 +1,19 @@
+{
+  "values": [
+    {
+      "id": "magikarp_diario",
+      "name": "Cardume do dia",
+      "period": "DAILY",
+      "objective": "CAPTURE",
+      "species": "magikarp",
+      "target": 20,
+      "reward": {
+        "xp": 250,
+        "minutes": 10,
+        "bait": "rapida",
+        "amount": 10
+      }
+    }
+  ],
+  "schemaVersion": 1
+}

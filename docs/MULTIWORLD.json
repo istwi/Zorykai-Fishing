@@ -1,0 +1,89 @@
+{
+  "uploadedFile": "Multiworld-Fabric-bundle-1.13.1-gamerule-fix.jar",
+  "sha256": "cc6b9519b7ae0ab88485744ca5c6565059549f55e32e49969b7b2bca5ad61133",
+  "bundle": {
+    "schemaVersion": 1,
+    "id": "multiworld-bundle",
+    "version": "1.13.1",
+    "name": "Multiworld-bundle",
+    "description": "Multiworld-bundle contains nested 1.19/1.20/1.21 versions of Multiworld. Farbic-Loader should choose the right one",
+    "authors": [
+      "isaiah"
+    ],
+    "contact": {
+      "homepage": "https://pisaiah.com",
+      "sources": "https://github.com/isaiahmc/multiworld/"
+    },
+    "license": "CC0-1.0",
+    "icon": "assets/multiworld/icon.png",
+    "environment": "*",
+    "entrypoints": {
+      "main": [
+        "multiworld.MultiworldBundleMod"
+      ]
+    },
+    "depends": {
+      "fabricloader": ">=0.14.9"
+    },
+    "jars": [
+      {
+        "file": "META-INF/jars/Multiworld-Fabric-1.20.1.jar"
+      },
+      {
+        "file": "META-INF/jars/Multiworld-Fabric-1.20.6.jar"
+      },
+      {
+        "file": "META-INF/jars/Multiworld-Fabric-1.21.1.jar"
+      },
+      {
+        "file": "META-INF/jars/Multiworld-Fabric-1.21.10.jar"
+      },
+      {
+        "file": "META-INF/jars/Multiworld-Fabric-1.21.11.jar"
+      },
+      {
+        "file": "META-INF/jars/Multiworld-Fabric-1.21.4.jar"
+      },
+      {
+        "file": "META-INF/jars/Multiworld-Fabric-1.21.8.jar"
+      }
+    ]
+  },
+  "selectedImplementation": {
+    "schemaVersion": 1,
+    "id": "multiworld",
+    "version": "1.13.1",
+    "name": "Multiworld",
+    "description": "Travel between and manage multiple worlds.",
+    "authors": [
+      "Isaiah"
+    ],
+    "contact": {
+      "homepage": "https://curseforge.com/minecraft/mc-mods/multiworld-mod",
+      "sources": "https://github.com/IsaiahMC/multiworld"
+    },
+    "license": "LGPL version 3.0",
+    "icon": "assets/MultiworldMod/icon.png",
+    "environment": "*",
+    "entrypoints": {
+      "main": [
+        "me.isaiah.multiworld.fabric.MultiworldModFabric"
+      ]
+    },
+    "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.21- <1.21.3-"
+    },
+    "mixins": [
+      "multiworld.mixins.json"
+    ],
+    "suggests": {
+      "flamingo": "*"
+    },
+    "jars": [
+      {
+        "file": "META-INF/jars/fantasy-0.6.3+1.21.jar"
+      }
+    ]
+  }
+}

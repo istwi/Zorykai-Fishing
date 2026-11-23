@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "iscas",
+      "weight": 50,
+      "type": "bait",
+      "reference": "rapida",
+      "amount": 5
+    },
+    {
+      "id": "bolas",
+      "weight": 35,
+      "type": "ball",
+      "reference": "boa",
+      "amount": 3
+    },
+    {
+      "id": "fragmento",
+      "weight": 10,
+      "type": "fragment",
+      "amount": 1
+    },
+    {
+      "id": "diamante",
+      "weight": 5,
+      "type": "item",
+      "reference": "minecraft:diamond",
+      "amount": 1
+    }
+  ],
+  "schemaVersion": 1
+}
