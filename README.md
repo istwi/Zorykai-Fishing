@@ -1,6 +1,6 @@
 # Zorykai Fishing 0.2.0-beta.1
 
-**Downloads:** [JAR](https://github.com/istwi/Zorykai-Fishing/releases/download/v0.2.0-beta.1/Zorykai-Fishing-0.2.0-beta.1.jar) · [Pacote completo](https://github.com/istwi/Zorykai-Fishing/releases/download/v0.2.0-beta.1/zorykai-fishing-0.2.0-beta.1-completo.zip) · [Configurações](https://github.com/istwi/Zorykai-Fishing/releases/download/v0.2.0-beta.1/zorykai-fishing-configuracoes.zip).
+**Downloads:** [JAR](https://github.com/istwi/Zorykai-Fishing/raw/refs/heads/main/downloads/Zorykai-Fishing-0.2.0-beta.1.jar) · [Pacote completo](https://github.com/istwi/Zorykai-Fishing/raw/refs/heads/main/downloads/zorykai-fishing-0.2.0-beta.1-completo.zip) · [Configurações](https://github.com/istwi/Zorykai-Fishing/raw/refs/heads/main/downloads/zorykai-fishing-configuracoes.zip).
 
 Os padrões de configuração também estão em `config/zorykai-fishing/`; não há mapa ativo instalado.
 
