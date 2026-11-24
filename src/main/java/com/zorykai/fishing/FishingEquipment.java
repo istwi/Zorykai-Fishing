@@ -60,6 +60,7 @@ public final class FishingEquipment {
   p.getServerWorld().spawnParticles(p,ParticleTypes.SPLASH,true,bobber.getX(),bobber.getY()+.15,bobber.getZ(),16,.25,.15,.25,.1);
   p.getServerWorld().spawnParticles(p,ParticleTypes.BUBBLE,true,bobber.getX(),bobber.getY(),bobber.getZ(),10,.2,.1,.2,.05);
  }
+ public void pull(ServerPlayerEntity p,FishingBobberEntity bobber){p.networkHandler.sendPacket(new net.minecraft.network.packet.s2c.play.PlaySoundS2CPacket(net.minecraft.registry.Registries.SOUND_EVENT.getEntry(SoundEvents.ENTITY_FISHING_BOBBER_SPLASH),SoundCategory.PLAYERS,bobber.getX(),bobber.getY(),bobber.getZ(),.6f,.65f,p.getRandom().nextLong()));p.getServerWorld().spawnParticles(p,ParticleTypes.SPLASH,true,bobber.getX(),bobber.getY()+.15,bobber.getZ(),6,.2,.1,.2,.08);}
  public boolean ownsLine(FishingBobberEntity bobber){var owner=bobber.getPlayerOwner();var line=owner==null?null:mod.engine.lines.get(owner.getUuid());return line!=null&&line.bobber==bobber;}
  public boolean mayRide(Entity rider,Entity target){
   if(!target.getCommandTags().contains(BOAT))return true;

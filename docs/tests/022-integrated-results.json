@@ -1,0 +1,538 @@
+[
+  {
+    "name": "Fresh server remains unconfigured and creates no fishing dimension",
+    "passed": true
+  },
+  {
+    "name": "Entering an unconfigured map does not modify inventory",
+    "passed": true
+  },
+  {
+    "name": "General perimeter and internal lake reload in order",
+    "passed": true
+  },
+  {
+    "name": "Reload preserves customized lake definition",
+    "passed": true
+  },
+  {
+    "name": "Real Cobblemon entity appears in registered water",
+    "passed": true
+  },
+  {
+    "name": "Native capture is disabled before the entity enters the world",
+    "passed": true
+  },
+  {
+    "name": "Native thrown-ball hit event is canceled for protected fishing entity",
+    "passed": true
+  },
+  {
+    "name": "Fishing Pokemon seen event does not advance official dex",
+    "passed": true
+  },
+  {
+    "name": "Ordinary Pokemon seen event is unaffected",
+    "passed": true
+  },
+  {
+    "name": "Another player cannot capture the encounter",
+    "passed": true
+  },
+  {
+    "name": "Foreign capture writes nothing",
+    "passed": true
+  },
+  {
+    "name": "Owner capture commits exclusive storage",
+    "passed": true
+  },
+  {
+    "name": "Repeated capture is idempotent",
+    "passed": true
+  },
+  {
+    "name": "Captured display entity is removed after successful storage",
+    "passed": true
+  },
+  {
+    "name": "Party including pre-existing Pokemon remains unchanged",
+    "passed": true
+  },
+  {
+    "name": "PC including pre-existing Pokemon remains unchanged",
+    "passed": true
+  },
+  {
+    "name": "No native PokemonCapturedEvent was emitted",
+    "passed": true
+  },
+  {
+    "name": "Player items are preserved",
+    "passed": true
+  },
+  {
+    "name": "Storage menu opens with actual capture data",
+    "passed": true
+  },
+  {
+    "name": "Storage UI cannot move Pokemon records as items",
+    "passed": true
+  },
+  {
+    "name": "Full storage refuses capture without deleting encounter",
+    "passed": true
+  },
+  {
+    "name": "Explicit encounter expiry removes entity without extra capture",
+    "passed": true
+  },
+  {
+    "name": "Capture persists through an independent SQLite connection",
+    "passed": true
+  },
+  {
+    "name": "Exact supplied Multiworld 1.13.1 loaded",
+    "passed": true
+  },
+  {
+    "name": "Real Zorykai menu API contains registered Fishing storage action",
+    "passed": true
+  },
+  {
+    "name": "External Fishing menu validates at startup independent of SERVER_STARTED order",
+    "passed": true
+  },
+  {
+    "name": "Configured VIP quota through actual Fabric permission checks: magma",
+    "passed": true
+  },
+  {
+    "name": "Configured VIP quota through actual Fabric permission checks: aqua",
+    "passed": true
+  },
+  {
+    "name": "Configured VIP quota through actual Fabric permission checks: plasma",
+    "passed": true
+  },
+  {
+    "name": "Configured VIP quota through actual Fabric permission checks: galactic",
+    "passed": true
+  },
+  {
+    "name": "Normal player quota remains 60 minutes",
+    "passed": true
+  },
+  {
+    "name": "Session reserves original inventory before temporary equipment",
+    "passed": true
+  },
+  {
+    "name": "External teleport API is refused during session",
+    "passed": true
+  },
+  {
+    "name": "Command execution blocks external item commands even for operator",
+    "passed": true
+  },
+  {
+    "name": "Parsed player command route also enforces session whitelist",
+    "passed": true
+  },
+  {
+    "name": "Temporary gear cannot be dropped",
+    "passed": true
+  },
+  {
+    "name": "Timer debits at most one second within same second",
+    "passed": true
+  },
+  {
+    "name": "Exit restores inventory armor and offhand without duplication",
+    "passed": true
+  },
+  {
+    "name": "Fishing never overwrites unrelated Ender Chest rewards",
+    "passed": true
+  },
+  {
+    "name": "Exit restores XP and temporary abilities",
+    "passed": true
+  },
+  {
+    "name": "Unexpected external reward is preserved separately on exit",
+    "passed": true
+  },
+  {
+    "name": "Quarantined reward delivery commits once with inventory receipt",
+    "passed": true
+  },
+  {
+    "name": "Restart loads unfinished session as recovery-only",
+    "passed": true
+  },
+  {
+    "name": "Guard entry deny is respected by Fishing destination validation",
+    "passed": true
+  },
+  {
+    "name": "Guard restricted arena does not expel pending Fishing recovery before JOIN",
+    "passed": true
+  },
+  {
+    "name": "Recovery does not grant general entry bypass",
+    "passed": true
+  },
+  {
+    "name": "Native loadPlayerData restores original data before JOIN",
+    "passed": true
+  },
+  {
+    "name": "Recovery clears pending only after verified player data save",
+    "passed": true
+  },
+  {
+    "name": "Missing return dimension preserves session and original inventory snapshot",
+    "passed": true
+  },
+  {
+    "name": "Recovery holding state blocks external teleport",
+    "passed": true
+  },
+  {
+    "name": "Controlled retry succeeds when valid return destination is restored",
+    "passed": true
+  },
+  {
+    "name": "Death inside session restores inventory instead of dropping temporary items",
+    "passed": true
+  },
+  {
+    "name": "ALL lake mode requires level permission and quest",
+    "passed": true
+  },
+  {
+    "name": "Permanent lake unlock is independent of temporary permission",
+    "passed": true
+  },
+  {
+    "name": "Explicit administrative lake block takes priority",
+    "passed": true
+  },
+  {
+    "name": "Two simultaneous sessions keep distinct inventory reservations",
+    "passed": true
+  },
+  {
+    "name": "Actual bobber position identifies lake while player remains on shore",
+    "passed": true
+  },
+  {
+    "name": "Rod bite and tension minigame spawns exclusive Pokemon in water",
+    "passed": true
+  },
+  {
+    "name": "Premium ball callback returns updated physical stack after virtual stock debit",
+    "passed": true
+  },
+  {
+    "name": "Actual custom ball projectile records capture without native Party or PC insertion",
+    "passed": true
+  },
+  {
+    "name": "Fishing accepts only trusted registry-linked Trainers commerce NPC",
+    "passed": true
+  },
+  {
+    "name": "Real Trainers NPC command opens Fishing storage during active session",
+    "passed": true
+  },
+  {
+    "name": "Favourite capture cannot be released",
+    "passed": true
+  },
+  {
+    "name": "Daily quest progresses using Fishing captures",
+    "passed": true
+  },
+  {
+    "name": "Quest reward applies persisted XP time and bait",
+    "passed": true
+  },
+  {
+    "name": "Repeated quest reward cannot duplicate items or money",
+    "passed": true
+  },
+  {
+    "name": "Configured event changes Fishing size multiplier",
+    "passed": true
+  },
+  {
+    "name": "Tournament records enrolled player\u0027s capture and final ranking",
+    "passed": true
+  },
+  {
+    "name": "Tournament registration alone cannot earn a prize without catches",
+    "passed": true
+  },
+  {
+    "name": "Dynamic screen opens: main",
+    "passed": true
+  },
+  {
+    "name": "Dynamic screen opens: varas",
+    "passed": true
+  },
+  {
+    "name": "Dynamic screen opens: iscas",
+    "passed": true
+  },
+  {
+    "name": "Dynamic screen opens: bolas",
+    "passed": true
+  },
+  {
+    "name": "Dynamic screen opens: melhorias",
+    "passed": true
+  },
+  {
+    "name": "Dynamic screen opens: tempo",
+    "passed": true
+  },
+  {
+    "name": "Dynamic screen opens: missoes",
+    "passed": true
+  },
+  {
+    "name": "Dynamic screen opens: conquistas",
+    "passed": true
+  },
+  {
+    "name": "Dynamic screen opens: torneios",
+    "passed": true
+  },
+  {
+    "name": "Dynamic screen opens: ranking",
+    "passed": true
+  },
+  {
+    "name": "Dynamic screen opens: dex",
+    "passed": true
+  },
+  {
+    "name": "Dynamic screen opens: museu",
+    "passed": true
+  },
+  {
+    "name": "Dynamic screen opens: prestigio",
+    "passed": true
+  },
+  {
+    "name": "Dynamic screen opens: tesouros",
+    "passed": true
+  },
+  {
+    "name": "Dynamic screen opens: pendencia",
+    "passed": true
+  },
+  {
+    "name": "Exact supplied Multiworld creates isolated test dimension through real command",
+    "passed": true
+  },
+  {
+    "name": "Fishing enters loaded Multiworld dimension through native registry",
+    "passed": true
+  },
+  {
+    "name": "Fishing restores original dimension after Multiworld session",
+    "passed": true
+  },
+  {
+    "name": "Time package that exceeds cap is rejected before reserving or charging",
+    "passed": true
+  },
+  {
+    "name": "Real Impactor account accepts isolated test funding",
+    "passed": true
+  },
+  {
+    "name": "Real Impactor purchase credits virtual bait stock exactly once",
+    "passed": true
+  },
+  {
+    "name": "Real Impactor sale marks capture SOLD after confirmed credit",
+    "passed": true
+  },
+  {
+    "name": "Sale advances persistent Fishing statistics",
+    "passed": true
+  },
+  {
+    "name": "Interrupted monetary intent becomes UNCERTAIN instead of automatically charging again",
+    "passed": true
+  },
+  {
+    "name": "Uncertain finance recovery does not grant purchased stock",
+    "passed": true
+  },
+  {
+    "name": "Concurrent transaction cannot bypass uncertain journal lock",
+    "passed": true
+  },
+  {
+    "name": "Explicit not-applied attestation releases financial lock without granting items",
+    "passed": true
+  },
+  {
+    "name": "Default capture cooldown starts at ten seconds",
+    "passed": true
+  },
+  {
+    "name": "Session equips one reusable temporary boat",
+    "passed": true
+  },
+  {
+    "name": "Wild Pokemon spawn blocked in construction outside lake",
+    "passed": true
+  },
+  {
+    "name": "Pokemon outside construction can still spawn",
+    "passed": true
+  },
+  {
+    "name": "Tag alone cannot bypass fishing encounter spawn authorization",
+    "passed": true
+  },
+  {
+    "name": "Authorized fished Pokemon still spawns inside construction",
+    "passed": true
+  },
+  {
+    "name": "Throw sends authoritative hand slot even when server stack is unchanged",
+    "passed": true
+  },
+  {
+    "name": "Capture ball remains in selected hand after throw",
+    "passed": true
+  },
+  {
+    "name": "100 rapid uses debit finite ball stock only once during cooldown",
+    "passed": true
+  },
+  {
+    "name": "Cooldown sends filling action bar and native overlay, without boss bar",
+    "passed": true
+  },
+  {
+    "name": "Projectile hit records exactly one capture and retains reusable icon",
+    "passed": true
+  },
+  {
+    "name": "Reusable boat places a real invulnerable owned entity in water",
+    "passed": true
+  },
+  {
+    "name": "Foreign rider cannot mount temporary boat even with force",
+    "passed": true
+  },
+  {
+    "name": "Owner can mount temporary boat",
+    "passed": true
+  },
+  {
+    "name": "Owner can dismount without leaving fishing session",
+    "passed": true
+  },
+  {
+    "name": "Bite sends spatial sound at bobber",
+    "passed": true
+  },
+  {
+    "name": "Bite sends splash and bubble packets at bobber",
+    "passed": true
+  },
+  {
+    "name": "Bite no longer sends Fisgou chat message",
+    "passed": true
+  },
+  {
+    "name": "Bite feedback is emitted once per hooked fish",
+    "passed": true
+  },
+  {
+    "name": "Actual fishing engine pulls progress backwards and warns once",
+    "passed": true
+  },
+  {
+    "name": "Repeated same-tick engine calls cannot multiply fish losses or warning sounds",
+    "passed": true
+  },
+  {
+    "name": "Fight HUD has ten bars for tension and ten for progress",
+    "passed": true
+  },
+  {
+    "name": "Fishing bobber is identified by entity identity and owner",
+    "passed": true
+  },
+  {
+    "name": "Actual vanilla fishing logic is canceled for mod bobber",
+    "passed": true
+  },
+  {
+    "name": "Ordinary Minecraft rod still runs vanilla fishing logic",
+    "passed": true
+  },
+  {
+    "name": "Action bar fills progressively from gray to twenty blue bars",
+    "passed": true
+  },
+  {
+    "name": "Authoritative hand slot is resent on later server ticks",
+    "passed": true
+  },
+  {
+    "name": "Cooldown expires automatically without switching hand or reopening inventory",
+    "passed": true
+  },
+  {
+    "name": "Throw works again after cooldown, exhausting virtual stock while icon stays",
+    "passed": true
+  },
+  {
+    "name": "Reusing boat tool retrieves existing entity without item duplication",
+    "passed": true
+  },
+  {
+    "name": "Leaving while mounted removes temporary boat and restores original inventory",
+    "passed": true
+  },
+  {
+    "name": "Session exit clears capture recharge UI",
+    "passed": true
+  },
+  {
+    "name": "One water click carrying block-use and item-use packets places exactly one boat without recalling it",
+    "passed": true
+  },
+  {
+    "name": "Cooldown shop opens with upgrade and current/next timing",
+    "passed": true
+  },
+  {
+    "name": "Real Impactor funds cooldown shop test account",
+    "passed": true
+  },
+  {
+    "name": "Rapid duplicate cooldown purchases respect durable finance lock",
+    "passed": true
+  },
+  {
+    "name": "Paid cooldown improvement persists and changes all fishing balls to nine seconds",
+    "passed": true
+  },
+  {
+    "name": "Cooldown buff survives independent database reload",
+    "passed": true
+  }
+]

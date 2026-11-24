@@ -14,3 +14,5 @@ O ZIP de configurações não contém mapa ativo nem lago instalado. Não substi
 Para o servidor real, ainda valide com seu cliente, autenticador, dimensão construída e modpack. Os JARs de teste `checks` criam dados artificiais e encerram o runtime: não devem ir para produção.
 
 Atualizando da beta anterior: troque somente o JAR, preserve banco e JSONs; veja `ATUALIZACAO_0.2.1.md`. A recarga começa em 10s e as melhorias ficam em `/pesca recarga`.
+
+Na 0.2.2, o novo `minigame.json` é gerado automaticamente. Veja `ATUALIZACAO_0.2.2.md` para perdas de progresso e tolerâncias.
