@@ -10,7 +10,12 @@
     "CommandProtectionMixin",
     "GuardRecoveryMixin",
     "PlayerSaveInvoker",
-    "FishingBallMixin"
+    "FishingBallMixin",
+    "FishingBobberMixin",
+    "FishingSpawnMixin",
+    "FishingBoatMixin",
+    "FishingPassengerMixin",
+    "FishingVehicleDropsMixin"
   ],
   "injectors": {
     "defaultRequire": 1

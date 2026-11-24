@@ -1,11 +1,12 @@
 from pathlib import Path
-import os,sys,shutil,subprocess,json,urllib.parse
+import os,sys,shutil,subprocess,json,urllib.parse,re
 repo=Path('/workspace/Zorykai-Fishing');r=Path(sys.argv[1]);integrated=len(sys.argv)>2;r.mkdir(exist_ok=False);base=Path('/workspace/shared/raids-test-server')
 for n in ['server.jar','libraries','fabric-server-launch.jar']:(r/n).symlink_to(base/n,target_is_directory=(base/n).is_dir())
 (r/'mods').mkdir()
 for p in (base/'mods').glob('*.jar'):
- if 'Raids' not in p.name:shutil.copy2(p,r/'mods'/p.name)
-for name in ['Zorykai-Fishing-0.2.0-beta.1.jar','Zorykai-Fishing-0.2.0-beta.1-checks.jar']:shutil.copy2(repo/'build/libs'/name,r/'mods'/name)
+ if 'Raids' not in p.name:(r/'mods'/p.name).symlink_to(p)
+version=re.search(r"version='([^']+)'",(repo/'build.gradle').read_text()).group(1)
+for name in [f'Zorykai-Fishing-{version}.jar',f'Zorykai-Fishing-{version}-checks.jar']:shutil.copy2(repo/'build/libs'/name,r/'mods'/name)
 if integrated:
  for p in [Path('/workspace/attachments/d21e2e9d-8b64-4b1f-b135-3c9ae646ed0e/Multiworld-Fabric-bundle-1.13.1-gamerule-fix.jar'),Path('/workspace/Zorykai-menu/build/libs/zorykaimenus-1.3.6.jar'),Path('/workspace/Zorykai-menu/.cache/deps/impactor.jar'),Path('/workspace/Shirokai-Trainers/downloads/shirokai-trainers-0.3.5.jar'),Path('/workspace/Shirokai-Guard/build/libs/shirokai-guard-0.5.3-alpha.1.jar')]:shutil.copy2(p,r/'mods'/p.name)
 if integrated:

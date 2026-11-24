@@ -53,7 +53,7 @@ public final class FishingSessions {
    long second=System.nanoTime()/1000000000L;if(second==lastSecond.getOrDefault(p.getUuid(),-1L))continue;lastSecond.put(p.getUuid(),second);
    var data=renew(p);long remaining=balance(data);if(remaining<=0){exit(p);continue;}
    mod.data.update(p.getUuid(),d->{if(d.remainingSeconds>0)d.remainingSeconds--;else for(var credit:d.credits)if(credit.expires>System.currentTimeMillis()&&credit.seconds>0){credit.seconds--;break;}return null;});
-   if(bool(mod.rules.get("timers"),"actionbar",true))p.sendMessage(Text.literal("✦ ZORYKAI · Tempo: "+(remaining/60)+"m "+remaining%60+"s"),true);
+   if(bool(mod.rules.get("timers"),"actionbar",true)&&!mod.engine.equipment.cooling(p))p.sendMessage(Text.literal("✦ ZORYKAI · Tempo: "+(remaining/60)+"m "+remaining%60+"s"),true);
    for(var warn:mod.rules.get("timers").getAsJsonArray("warnings"))if(remaining==warn.getAsLong())p.sendMessage(Text.literal("✦ ZORYKAI · Restam "+remaining+" segundos de pesca."),false);
   }catch(Exception e){mod.fail(e);}}}
  void phase(Session old,String phase)throws Exception{mod.store.transaction(c->{try(var p=c.prepareStatement("UPDATE sessions SET phase=? WHERE player=? AND transaction_id=?")){p.setString(1,phase);p.setString(2,old.player.toString());p.setString(3,old.id);if(p.executeUpdate()!=1)throw new SQLException("Sessão divergente");}return null;});pending.put(old.player,new Session(old.player,old.id,phase,old.snapshot,old.dimension,old.x,old.y,old.z,old.yaw,old.pitch));}

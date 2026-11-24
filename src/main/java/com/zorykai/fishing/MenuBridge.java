@@ -8,7 +8,7 @@ public final class MenuBridge {
   ZorykaiMenusAPI.registerCondition("zorykai_fishing:active",(player,json)->mod.sessions!=null&&mod.sessions.active(player));
   ZorykaiMenusAPI.registerAction("zorykai_fishing:entrar","zorykai_fishing.use",context->{try{mod.sessions.enter(context.player());}catch(Exception e){FishingMod.tell(context.player(),e.getMessage());}});
   ZorykaiMenusAPI.registerAction("zorykai_fishing:sair","zorykai_fishing.use",context->{try{mod.sessions.exit(context.player());}catch(Exception e){mod.fail(e);}});
-  for(String page:java.util.List.of("armazem","areas","perfil","varas","iscas","bolas","melhorias","missoes","tempo","conquistas","torneios","ranking","dex","museu","prestigio","tesouros","pendencia","recordes","premios","eventos"))ZorykaiMenusAPI.registerAction("zorykai_fishing:"+page,"zorykai_fishing.use",context->FishingScreens.open(mod,context.player(),page));
+  for(String page:java.util.List.of("armazem","areas","perfil","varas","iscas","bolas","melhorias","missoes","tempo","conquistas","torneios","ranking","dex","museu","prestigio","tesouros","pendencia","recordes","premios","eventos","recarga"))ZorykaiMenusAPI.registerAction("zorykai_fishing:"+page,"zorykai_fishing.use",context->FishingScreens.open(mod,context.player(),page));
  }
  public static boolean openConfigured(FishingMod mod,ServerPlayerEntity p){
   if(!ZorykaiMenusAPI.ready()||!ZorykaiMenusAPI.menuExists(mod.config.settings.menuId))return false;

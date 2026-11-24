@@ -1,0 +1,9 @@
+{
+  "enabled": true,
+  "name": "Recarga Acelerada",
+  "price": 2000,
+  "maximumLevel": 5,
+  "secondsPerLevel": 1,
+  "minimumCooldownSeconds": 2,
+  "schemaVersion": 1
+}

@@ -1,6 +1,6 @@
-# Validação da beta 0.2.0-beta.1
+# Validação da beta 0.2.1-beta.1
 
-Os relatórios desta entrega são separados da prova de conceito 0.1.0. Os arquivos `beta-*.json` em `docs/tests/` registram os ensaios do JAR entregue e seus hashes. O código de teste está em `src/integration` e não faz parte do JAR de produção.
+Os relatórios desta entrega são separados da prova de conceito 0.1.0. Os arquivos `021-*.json` em `docs/tests/` registram os ensaios do JAR entregue e seus hashes. O código de teste está em `src/integration` e não faz parte do JAR de produção.
 
 ## Ambiente
 
@@ -26,7 +26,9 @@ Os ensaios Fabric executam métodos e eventos reais do servidor com jogadores si
 - Registro real da API Zorykai Menus, comando de NPC real do Trainers abrindo armazém durante sessão e dimensão de teste criada pelo Multiworld seguida de entrada/retorno.
 - Compra e venda usando conta/serviço Impactor reais no runtime isolado. Falha simulada entre intenção e confirmação não repete pagamento automaticamente; a atestação explícita de não aplicação libera o journal sem conceder estoque.
 
-O teste de queda executa **duas JVMs distintas**. A primeira salva inventário temporário com sessão ACTIVE e é encerrada por SIGKILL, sem SERVER_STOPPING. A segunda carrega a reserva do SQLite e restaura o original no caminho nativo de login, verificando inventário/armadura/mão secundária/XP/posição e repetição sem duplicar.
+Na versão 0.2.1, os ensaios também verificam bloqueio de spawn dentro/fora do perímetro, rejeição de tag forjada, encontro próprio preservado, ícone reutilizável e pacotes explícitos de sincronização, estoque consumido uma vez com 100 usos rápidos, recarga inicial de 10s, barra de `I` preenchendo na action bar sem boss bar, som espacial/partículas privados e emitidos uma vez, cancelamento efetivo da lógica vanilla só na boia do mod, bote real com dono, montar/desmontar, recolher/recolocar, saída montada com inventário restaurado e deduplicação de um clique que envie block-use e item-use. A loja de recarga é testada com Impactor real e persistência em conexão SQLite independente; sem Impactor, a compra paga recusa sem conceder melhoria.
+
+O teste de queda executa **duas JVMs distintas**. A primeira salva inventário temporário com sessão ACTIVE e é encerrada por SIGKILL, sem SERVER_STOPPING. A segunda carrega a reserva do SQLite e restaura o original no caminho nativo de login, verificando inventário/armadura/mão secundária/XP/posição e repetição sem duplicar. A queda ocorre com bote temporário montado e melhorias de recarga salvas: confere também a ausência de bote órfão e a persistência dos níveis.
 
 ## Limites da evidência
 
@@ -36,16 +38,17 @@ O minijogo é dirigido deterministicamente no ensaio: a boia e os eventos são r
 
 Não foi provocado um crash no exato ciclo de CPU de um débito externo. O teste de intenção interrompida persiste esse estado e reinicializa o serviço financeiro. O Impactor não fornece chave idempotente por transação: um resultado monetário desconhecido requer conferência administrativa, não uma suposição automática.
 
-Os avisos de autenticação pública indisponível, gerador flat e metadados `.old` para perfis artificiais recém-criados pertencem ao runtime isolado e constam nos logs. Falhas de assertiva são registradas como `passed:false`, nunca omitidas como sucesso. Consulte somente os relatórios beta finais vinculados ao hash da entrega para o resultado final; execuções intermediárias são mantidas separadamente no workspace.
+Os avisos de autenticação pública indisponível, gerador flat e metadados `.old` para perfis artificiais recém-criados pertencem ao runtime isolado e constam nos logs. Falhas de assertiva são registradas como `passed:false`, nunca omitidas como sucesso. Consulte somente os relatórios 021 finais vinculados ao hash da entrega para o resultado final; execuções intermediárias são mantidas separadamente no workspace.
+
 
 ## Resultado final
 
-Compilação concluída com sucesso. JUnit: **13 testes, zero falhas**.
+Compilação concluída com sucesso. JUnit: **15 testes, zero falhas**.
 
 | Runtime Fabric | Verificações | Falhas |
 |---|---:|---:|
-| standalone | 78 | 0 |
-| integrated | 96 | 0 |
-| crash | 4 | 0 |
+| standalone | 110 | 0 |
+| integrated | 131 | 0 |
+| crash | 6 | 0 |
 
-As contagens de runtimes incluem cenários repetidos entre ambientes. Não são 178 funcionalidades independentes. Todos os runtimes usaram exatamente o JAR com SHA-256 `d41217b69a7c15a0eac355d37465f79a8d1bd48de3985bfdc54b2cf104250867`.
+As contagens de runtimes incluem cenários repetidos entre ambientes. Não são 247 funcionalidades independentes. Todos os runtimes usaram exatamente o JAR com SHA-256 `0072fba0d0c76ea218a96c091502f3e280ee793b04e8572aad7f6065d10cf892`.

@@ -19,11 +19,12 @@ public final class FishingFinance implements AutoCloseable {
  public boolean busy(UUID id)throws Exception{return pending(id)!=null;}
  public Transaction pending(UUID id)throws Exception{return mod.store.transaction(c->{try(var p=c.prepareStatement("SELECT id,kind,stage,amount,payload FROM finances WHERE player=? AND stage NOT IN ('DONE','CANCELED') ORDER BY created LIMIT 1")){p.setString(1,id.toString());try(var r=p.executeQuery()){return r.next()?new Transaction(r.getString(1),id,r.getString(2),r.getString(3),new BigDecimal(r.getString(4)),JsonParser.parseString(r.getString(5)).getAsJsonObject()):null;}}});}
  public void buy(ServerPlayerEntity p,String type,String id)throws Exception{
-  var data=mod.data.profile(p.getUuid());String file=switch(type){case "rod"->"rods";case "bait"->"baits";case "ball"->"pokeballs";case "upgrade"->"upgrades";case "time"->"time-shop";case "capacity"->"storage";default->throw new IllegalArgumentException("Produto inválido");};
-  var definition=type.equals("capacity")?mod.rules.get(file):mod.rules.definition(file,id);if(mod.rules.level(data.xp)<num(definition,"minimumLevel",1))throw new IllegalArgumentException("Nível insuficiente");
+  var data=mod.data.profile(p.getUuid());String file=switch(type){case "rod"->"rods";case "bait"->"baits";case "ball"->"pokeballs";case "upgrade"->"upgrades";case "time"->"time-shop";case "capacity"->"storage";case "ball-upgrade"->"cooldown-shop";default->throw new IllegalArgumentException("Produto inválido");};
+  var definition=(type.equals("capacity")||type.equals("ball-upgrade"))?mod.rules.get(file):mod.rules.definition(file,id);if(mod.rules.level(data.xp)<num(definition,"minimumLevel",1))throw new IllegalArgumentException("Nível insuficiente");
   var payload=new JsonObject();payload.addProperty("type",type);payload.addProperty("id",id);payload.add("definition",definition.deepCopy());BigDecimal price=BigDecimal.valueOf(decimal(definition,type.equals("capacity")?"expansionPrice":"price",0));
   if(type.equals("rod")&&data.rods.containsKey(id))throw new IllegalArgumentException("Você já possui essa vara; selecione-a no menu");
   if(type.equals("upgrade")){var rod=data.rods.get(data.selectedRod);int current=rod.upgrades.getOrDefault(id,0);if(current>=num(definition,"maximumLevel",5))throw new IllegalArgumentException("Melhoria no nível máximo");payload.addProperty("rod",data.selectedRod);payload.addProperty("target",current+1);price=price.multiply(BigDecimal.valueOf(current+1));}
+  if(type.equals("ball-upgrade")){int current=data.ballCooldownLevel;if(!id.equals("recarga")||!bool(definition,"enabled",true))throw new IllegalArgumentException("Melhoria de recarga indisponível");if(current>=num(definition,"maximumLevel",5)||mod.engine.equipment.cooldownSeconds(current)<=mod.engine.equipment.cooldownSeconds(current+1))throw new IllegalArgumentException("Recarga no nível máximo");payload.addProperty("target",current+1);price=price.multiply(BigDecimal.valueOf(current+1));}
   if(type.equals("capacity")&&data.capacity>=num(definition,"maximumCapacity",300))throw new IllegalArgumentException("Armazém no tamanho máximo");
   if(type.equals("time")){data=mod.sessions.renew(p);if(mod.sessions.balance(data)+num(definition,"minutes",10)*60L>num(mod.rules.get("timers"),"maximumAccumulatedMinutes",360)*60L)throw new IllegalArgumentException("Esse pacote excede o limite de tempo acumulado");}
   begin(p.getUuid(),"BUY",price,false,payload);
@@ -51,6 +52,7 @@ public final class FishingFinance implements AutoCloseable {
    case "bait"->{d.baits.merge(id,num(definition,"amount",1),Math::addExact);d.selectedBait=id;}
    case "ball"->{d.balls.merge(id,num(definition,"amount",1),Math::addExact);d.selectedBall=id;}
    case "upgrade"->d.rods.get(str(payload,"rod","")).upgrades.merge(id,num(payload,"target",1),Math::max);
+   case "ball-upgrade"->d.ballCooldownLevel=Math.max(d.ballCooldownLevel,num(payload,"target",1));
    case "capacity"->d.capacity=Math.min(num(definition,"maximumCapacity",300),d.capacity+num(definition,"expansionSlots",10));
    case "time"->mod.sessions.addTime(d,num(definition,"minutes",10)*60L,num(definition,"validHours",24));
    default->throw new IllegalArgumentException("Produto não reconhecido");

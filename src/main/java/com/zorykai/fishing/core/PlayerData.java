@@ -1,7 +1,7 @@
 package com.zorykai.fishing.core;
 import java.util.*;
 public final class PlayerData {
- public String name="";public double largest;public long xp;public int prestige;public String selectedRod="inicial",selectedBait="comum",selectedBall="basica";
+ public String name="";public double largest;public long xp;public int prestige;public int ballCooldownLevel;public String selectedRod="inicial",selectedBait="comum",selectedBall="basica";
  public Map<String,Rod> rods=new LinkedHashMap<>();public Map<String,Integer> baits=new HashMap<>(),balls=new HashMap<>();
  public long cycleStart,remainingSeconds;public List<Credit> credits=new ArrayList<>();public Set<String> unlocks=new HashSet<>(),blockedAreas=new HashSet<>(),completedQuests=new HashSet<>(),achievements=new HashSet<>();
  public Map<String,Quest> quests=new HashMap<>();public Map<String,Dex> dex=new HashMap<>();public long captures,sales,speciesFound,shinyCaptures,tournamentWins;public int capacity=30;public Map<String,Long> counters=new HashMap<>();

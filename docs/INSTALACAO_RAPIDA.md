@@ -12,3 +12,5 @@
 O ZIP de configurações não contém mapa ativo nem lago instalado. Não substitua JSONs personalizados sem comparar. Exemplos de NPC/menu são optativos e precisam ser instalados nas pastas correspondentes; veja README.md.
 
 Para o servidor real, ainda valide com seu cliente, autenticador, dimensão construída e modpack. Os JARs de teste `checks` criam dados artificiais e encerram o runtime: não devem ir para produção.
+
+Atualizando da beta anterior: troque somente o JAR, preserve banco e JSONs; veja `ATUALIZACAO_0.2.1.md`. A recarga começa em 10s e as melhorias ficam em `/pesca recarga`.

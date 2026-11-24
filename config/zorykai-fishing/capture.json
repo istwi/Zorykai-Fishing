@@ -6,6 +6,7 @@
   "tensionDecayPerSecond": 12,
   "minimumReelTicks": 5,
   "lineExpirySeconds": 120,
+  "ballCooldownSeconds": 10,
   "treasureChance": 0.05,
   "schemaVersion": 1
 }

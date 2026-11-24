@@ -197,6 +197,21 @@
           "type": "zorykai_fishing:perfil"
         }
       ]
+    },
+    {
+      "id": "recarga",
+      "slots": [
+        22
+      ],
+      "icon": {
+        "id": "minecraft:clock"
+      },
+      "name": "<aqua>Recarga das bolas",
+      "actions": [
+        {
+          "type": "zorykai_fishing:recarga"
+        }
+      ]
     }
   ]
 }

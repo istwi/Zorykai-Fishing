@@ -1,0 +1,32 @@
+[
+  {
+    "tests": 4,
+    "failures": 0,
+    "errors": 0,
+    "suite": "com.zorykai.fishing.core.AreaTest"
+  },
+  {
+    "tests": 2,
+    "failures": 0,
+    "errors": 0,
+    "suite": "com.zorykai.fishing.core.BallRechargeTest"
+  },
+  {
+    "tests": 3,
+    "failures": 0,
+    "errors": 0,
+    "suite": "com.zorykai.fishing.core.ProgressPersistenceTest"
+  },
+  {
+    "tests": 3,
+    "failures": 0,
+    "errors": 0,
+    "suite": "com.zorykai.fishing.core.StoreTest"
+  },
+  {
+    "tests": 3,
+    "failures": 0,
+    "errors": 0,
+    "suite": "com.zorykai.fishing.GameConfigTest"
+  }
+]
