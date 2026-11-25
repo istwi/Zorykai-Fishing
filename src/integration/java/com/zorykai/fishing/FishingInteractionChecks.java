@@ -15,6 +15,7 @@ import net.minecraft.server.network.*;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.WorldSavePath;
+import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.util.hit.*;
 import net.minecraft.util.math.*;
 import java.util.*;
@@ -38,6 +39,12 @@ public final class FishingInteractionChecks {
   // Contain the fixture pool: flowing water must not flood the reserved map entrance.
   for(int n=1;n<=9;n++){s.getOverworld().setBlockState(new BlockPos(0,64,n),Blocks.STONE.getDefaultState());s.getOverworld().setBlockState(new BlockPos(9,64,n),Blocks.STONE.getDefaultState());s.getOverworld().setBlockState(new BlockPos(n,64,0),Blocks.STONE.getDefaultState());s.getOverworld().setBlockState(new BlockPos(n,64,9),Blocks.STONE.getDefaultState());}
   p.setPosition(20.5,64,.5);p.getInventory().setStack(4,new ItemStack(Items.DIAMOND,11));m.sessions.enter(p);
+  m.engine.areas.clear(p.getUuid());net.packets.clear();m.engine.areas.updatePlayer(p,s.getTicks());m.engine.areas.updatePlayer(p,s.getTicks()+10);m.engine.areas.updatePlayer(p,s.getTicks()+20);
+  check("Entering a stable lake shows one subtitle and one private bell",net.packets.stream().filter(packet->packet instanceof SubtitleS2CPacket).count()==1&&net.packets.stream().filter(packet->packet instanceof PlaySoundS2CPacket).count()==1);
+  net.packets.clear();m.engine.areas.mark(p);var markers=net.packets.stream().filter(packet->packet instanceof ParticleS2CPacket).map(packet->(ParticleS2CPacket)packet).toList();
+  check("Water boundary hints have a strict per-player particle cap",!markers.isEmpty()&&markers.size()<=12&&markers.stream().allMatch(packet->packet.getCount()==1));
+  check("Every area marker is over water inside a registered fishing lake",markers.stream().allMatch(packet->{var pos=BlockPos.ofFloored(packet.getX(),packet.getY(),packet.getZ());return p.getWorld().getFluidState(pos).isIn(FluidTags.WATER)&&m.config.at(p.getWorld().getRegistryKey().getValue().toString(),pos.getX()+.5,pos.getY()+.5,pos.getZ()+.5)!=null;}));
+  m.rules.get("area-feedback").addProperty("markersEnabled",false);net.packets.clear();m.engine.areas.mark(p);check("Area particles can be disabled without changing lake rules",net.packets.stream().noneMatch(packet->packet instanceof ParticleS2CPacket));m.rules.get("area-feedback").addProperty("markersEnabled",true);net.packets.clear();
   check("Default capture cooldown starts at ten seconds",m.engine.equipment.cooldownSeconds(p)==10);
   check("Session equips one reusable temporary boat",m.engine.gearType(p,p.getInventory().getStack(2)).equals("boat")&&p.getInventory().getStack(2).getCount()==1);
   // Spawn suppression also covers commands/direct entity insertion, not only Cobblemon's natural spawner.

@@ -1,0 +1,26 @@
+{
+  "version": "0.2.3-beta.1",
+  "jar": "Zorykai-Fishing-0.2.3-beta.1.jar",
+  "sha256": "517323cfc72f67b6d762003df3fededc98699cd96f777e0896ea5e4f23a7b375",
+  "unitTests": 22,
+  "fabricRuns": {
+    "standalone": {
+      "checks": 117,
+      "failed": 0,
+      "artifactSha256": "517323cfc72f67b6d762003df3fededc98699cd96f777e0896ea5e4f23a7b375"
+    },
+    "integrated": {
+      "checks": 138,
+      "failed": 0,
+      "artifactSha256": "517323cfc72f67b6d762003df3fededc98699cd96f777e0896ea5e4f23a7b375"
+    },
+    "crash": {
+      "checks": 6,
+      "failed": 0,
+      "artifactSha256": "517323cfc72f67b6d762003df3fededc98699cd96f777e0896ea5e4f23a7b375"
+    }
+  },
+  "humanClientTested": false,
+  "productionModified": false,
+  "githubPublished": false
+}

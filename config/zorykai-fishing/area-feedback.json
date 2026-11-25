@@ -1,0 +1,11 @@
+{
+  "entryEnabled": true,
+  "entrySound": true,
+  "entryStableTicks": 10,
+  "entryHeightTolerance": 2,
+  "markersEnabled": true,
+  "markerRadius": 12,
+  "markerIntervalTicks": 20,
+  "maximumParticles": 12,
+  "schemaVersion": 1
+}
