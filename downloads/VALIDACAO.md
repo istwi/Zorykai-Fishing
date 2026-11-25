@@ -1,6 +1,6 @@
-# Validação da beta 0.2.3-beta.1
+# Validação da beta 0.2.4-beta.1
 
-Os relatórios desta entrega são separados da prova de conceito 0.1.0. Os arquivos `023-*.json` em `docs/tests/` registram os ensaios do JAR entregue e seus hashes. O código de teste está em `src/integration` e não faz parte do JAR de produção.
+Os relatórios desta entrega são separados da prova de conceito 0.1.0. Os arquivos `024-*.json` em `docs/tests/` registram os ensaios do JAR entregue e seus hashes. O código de teste está em `src/integration` e não faz parte do JAR de produção.
 
 ## Ambiente
 
@@ -34,6 +34,8 @@ A versão 0.2.2 acrescenta testes unitários da tolerância para dar folga, perd
 
 Os testes da 0.2.3 verificam aviso discreto de entrada, sininho privado único, limite de emissão de partículas e posições exclusivamente sobre água dentro de lago registrado, além de desativação da marcação. Não são testes de FPS ou benchmarks de escala.
 
+A versão 0.2.4 testa compatibilidade de JSONs de área sem display/blocks parciais, cores legacy/hex, duração inválida e envio de subtítulo personalizado com nick e tempo. O runtime verifica brilho branco junto aos pontos coloridos, preservação do limite total, sinal adicional de fisgada e recolhimento antes da fisgada/cancelamento durante a disputa.
+
 ## Limites da evidência
 
 Não houve cliente gráfico humano nem ensaio no servidor do usuário. Os testes não demonstram latência de rede real, qualidade visual/animação em todos os clientes, escala de centenas de jogadores, interferência de todo o modpack ou todos os provedores de autenticação. Os aliases precisam corresponder ao autenticador efetivamente instalado. A confirmação de permissões foi feita via API Fabric, não por uma instância real de LuckPerms com grupos do usuário.
@@ -42,19 +44,20 @@ O minijogo é dirigido deterministicamente no ensaio: a boia e os eventos são r
 
 Não foi provocado um crash no exato ciclo de CPU de um débito externo. O teste de intenção interrompida persiste esse estado e reinicializa o serviço financeiro. O Impactor não fornece chave idempotente por transação: um resultado monetário desconhecido requer conferência administrativa, não uma suposição automática.
 
-Os avisos de autenticação pública indisponível, gerador flat e metadados `.old` para perfis artificiais recém-criados pertencem ao runtime isolado e constam nos logs. Falhas de assertiva são registradas como `passed:false`, nunca omitidas como sucesso. Consulte somente os relatórios 023 finais vinculados ao hash da entrega para o resultado final; execuções intermediárias são mantidas separadamente no workspace.
+Os avisos de autenticação pública indisponível, gerador flat e metadados `.old` para perfis artificiais recém-criados pertencem ao runtime isolado e constam nos logs. Falhas de assertiva são registradas como `passed:false`, nunca omitidas como sucesso. Consulte somente os relatórios 024 finais vinculados ao hash da entrega para o resultado final; execuções intermediárias são mantidas separadamente no workspace.
+
 
 
 
 
 ## Resultado final
 
-Compilação concluída com sucesso. JUnit: **22 testes, zero falhas**.
+Compilação concluída com sucesso. JUnit: **25 testes, zero falhas**.
 
 | Runtime Fabric | Verificações | Falhas |
 |---|---:|---:|
-| standalone | 117 | 0 |
-| integrated | 138 | 0 |
+| standalone | 121 | 0 |
+| integrated | 142 | 0 |
 | crash | 6 | 0 |
 
-As contagens de runtimes incluem cenários repetidos entre ambientes. Não são 261 funcionalidades independentes. Todos os runtimes usaram exatamente o JAR com SHA-256 `517323cfc72f67b6d762003df3fededc98699cd96f777e0896ea5e4f23a7b375`.
+As contagens de runtimes incluem cenários repetidos entre ambientes. Não são 269 funcionalidades independentes. Todos os runtimes usaram exatamente o JAR com SHA-256 `7c3d03c88e21ea8da748c35c55c4a64678613e4c687bcde29656739467a0f8c4`.

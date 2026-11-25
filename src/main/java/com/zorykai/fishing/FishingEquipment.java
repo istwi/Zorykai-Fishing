@@ -55,12 +55,13 @@ public final class FishingEquipment {
   p.sendMessage(text,true);
  }
  public void updateCooldown(ServerPlayerEntity p){var r=recharge.get(p.getUuid());if(r==null)return;int remaining=Math.max(0,r.until-mod.server.getTicks());for(var def:rows(mod.rules.get("pokeballs"))){var item=net.minecraft.registry.Registries.ITEM.get(net.minecraft.util.Identifier.of(str(def,"item","cobblemon:poke_ball")));if(remaining>0)p.getItemCooldownManager().set(item,remaining);else p.getItemCooldownManager().remove(item);}}
- public void bite(ServerPlayerEntity p,FishingBobberEntity bobber){
+ public void bite(ServerPlayerEntity p,FishingBobberEntity bobber){signal(p,bobber,false);
   p.networkHandler.sendPacket(new net.minecraft.network.packet.s2c.play.PlaySoundS2CPacket(net.minecraft.registry.Registries.SOUND_EVENT.getEntry(SoundEvents.ENTITY_FISHING_BOBBER_SPLASH),SoundCategory.PLAYERS,bobber.getX(),bobber.getY(),bobber.getZ(),.8f,1.25f,p.getRandom().nextLong()));
   p.getServerWorld().spawnParticles(p,ParticleTypes.SPLASH,true,bobber.getX(),bobber.getY()+.15,bobber.getZ(),16,.25,.15,.25,.1);
   p.getServerWorld().spawnParticles(p,ParticleTypes.BUBBLE,true,bobber.getX(),bobber.getY(),bobber.getZ(),10,.2,.1,.2,.05);
  }
- public void pull(ServerPlayerEntity p,FishingBobberEntity bobber){p.networkHandler.sendPacket(new net.minecraft.network.packet.s2c.play.PlaySoundS2CPacket(net.minecraft.registry.Registries.SOUND_EVENT.getEntry(SoundEvents.ENTITY_FISHING_BOBBER_SPLASH),SoundCategory.PLAYERS,bobber.getX(),bobber.getY(),bobber.getZ(),.6f,.65f,p.getRandom().nextLong()));p.getServerWorld().spawnParticles(p,ParticleTypes.SPLASH,true,bobber.getX(),bobber.getY()+.15,bobber.getZ(),6,.2,.1,.2,.08);}
+ public void pull(ServerPlayerEntity p,FishingBobberEntity bobber){signal(p,bobber,true);p.networkHandler.sendPacket(new net.minecraft.network.packet.s2c.play.PlaySoundS2CPacket(net.minecraft.registry.Registries.SOUND_EVENT.getEntry(SoundEvents.ENTITY_FISHING_BOBBER_SPLASH),SoundCategory.PLAYERS,bobber.getX(),bobber.getY(),bobber.getZ(),.6f,.65f,p.getRandom().nextLong()));p.getServerWorld().spawnParticles(p,ParticleTypes.SPLASH,true,bobber.getX(),bobber.getY()+.15,bobber.getZ(),6,.2,.1,.2,.08);}
+ public void signal(ServerPlayerEntity p,FishingBobberEntity bobber,boolean pulling){if(!bool(mod.rules.get("capture"),"bobberSignalEnabled",true))return;var pos=bobber.getBlockPos();var world=p.getServerWorld();if(!world.isChunkLoaded(pos)||!world.getFluidState(pos).isIn(FluidTags.WATER))return;double y=pos.getY()+world.getFluidState(pos).getHeight(world,pos)+.12;world.spawnParticles(p,new net.minecraft.particle.DustParticleEffect(pulling?new org.joml.Vector3f(1f,.15f,.1f):new org.joml.Vector3f(.1f,.45f,1f),(float)decimal(mod.rules.get("capture"),"bobberSignalScale",1.4)),true,pos.getX()+.5,y,pos.getZ()+.5,4,.15,.05,.15,0);}
  public boolean ownsLine(FishingBobberEntity bobber){var owner=bobber.getPlayerOwner();var line=owner==null?null:mod.engine.lines.get(owner.getUuid());return line!=null&&line.bobber==bobber;}
  public boolean mayRide(Entity rider,Entity target){
   if(!target.getCommandTags().contains(BOAT))return true;

@@ -7,6 +7,9 @@
   "minimumReelTicks": 5,
   "lineExpirySeconds": 120,
   "ballCooldownSeconds": 10,
+  "bobberSignalEnabled": true,
+  "bobberSignalIntervalTicks": 10,
+  "bobberSignalScale": 1.4,
   "treasureChance": 0.05,
   "schemaVersion": 1
 }

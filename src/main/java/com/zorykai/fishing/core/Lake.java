@@ -1,10 +1,12 @@
 package com.zorykai.fishing.core;
 import java.util.*;
 import java.util.random.RandomGenerator;
-public record Lake(String id,String name,String map,String dimension,Bounds bounds,int minimumLevel,String permission,List<Species> pokemon,String unlockMode,List<String> quests,List<String> rods,List<String> baits,Double sizeMultiplier){
+public record Lake(String id,String name,String map,String dimension,Bounds bounds,int minimumLevel,String permission,List<Species> pokemon,String unlockMode,List<String> quests,List<String> rods,List<String> baits,Double sizeMultiplier,Display display){
+ public static final class Display {public boolean enabled=true,sound=true;public String title="",subtitle="&b{area}{status}",blockedSuffix="&c · pesca bloqueada";public int fadeInTicks=5,stayTicks=40,fadeOutTicks=10;public void validate(){if(title==null||subtitle==null||blockedSuffix==null||title.length()>256||subtitle.length()>256||blockedSuffix.length()>128||fadeInTicks<0||fadeInTicks>200||stayTicks<1||stayTicks>600||fadeOutTicks<0||fadeOutTicks>200)throw new IllegalArgumentException("display inválido no JSON do lago");}}
+ public Lake(String id,String name,String map,String dimension,Bounds bounds,int minimumLevel,String permission,List<Species> pokemon,String unlockMode,List<String> quests,List<String> rods,List<String> baits,Double sizeMultiplier){this(id,name,map,dimension,bounds,minimumLevel,permission,pokemon,unlockMode,quests,rods,baits,sizeMultiplier,new Display());}
  public Lake(String id,String name,String map,String dimension,Bounds bounds,int minimumLevel,String permission,List<Species> pokemon,String unlockMode,List<String> quests,List<String> rods,List<String> baits){this(id,name,map,dimension,bounds,minimumLevel,permission,pokemon,unlockMode,quests,rods,baits,1d);}
  public Lake(String id,String name,String map,String dimension,Bounds bounds,int minimumLevel,String permission,List<Species> pokemon){this(id,name,map,dimension,bounds,minimumLevel,permission,pokemon,"ALL",List.of(),List.of(),List.of());}
- public Lake{sizeMultiplier=sizeMultiplier==null?1d:sizeMultiplier;unlockMode=unlockMode==null?"ALL":unlockMode;quests=quests==null?List.of():List.copyOf(quests);rods=rods==null?List.of():List.copyOf(rods);baits=baits==null?List.of():List.copyOf(baits);}
+ public Lake{display=display==null?new Display():display;display.validate();sizeMultiplier=sizeMultiplier==null?1d:sizeMultiplier;unlockMode=unlockMode==null?"ALL":unlockMode;quests=quests==null?List.of():List.copyOf(quests);rods=rods==null?List.of():List.copyOf(rods);baits=baits==null?List.of():List.copyOf(baits);}
  public record Species(String species,double chance){}
  public void validate(MapDefinition parent,Collection<Lake> others){
   parent.validate();if(!Double.isFinite(sizeMultiplier)||sizeMultiplier<=0||sizeMultiplier>5)throw new IllegalArgumentException("Multiplicador de tamanho inválido");

@@ -1,5 +1,5 @@
 plugins { id 'fabric-loom' version '1.10.5' }
-version='0.2.3-beta.1'
+version='0.2.4-beta.1'
 group='com.zorykai.fishing'
 repositories { mavenCentral(); maven { url='https://maven.fabricmc.net/' } }
 dependencies {
