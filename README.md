@@ -197,3 +197,8 @@ Gradle 8.14.3, JDK 21; `./gradlew build remapIntegrationJar`. As dependências l
 Testes JUnit e ensaios Fabric estão em `src/test`, `src/integration` e `audit/run_native.py`/`run_restart.py`. Consulte `docs/VALIDACAO_BETA.md` para resultados, versões e limites. O JAR `checks` é exclusivamente um instrumento de testes que cria jogadores/dados, altera configuração do runtime isolado e encerra o servidor. **Nunca o instale em produção.**
 
 A entrega é beta: os ensaios usam servidor Fabric real e jogadores simulados, não substituem um teste visual com seu cliente/modpack, rede, autenticação, carga e construção reais. Nenhuma alteração foi aplicada ao seu servidor ou publicada no GitHub.
+
+
+## Proposta de tiers e tamanhos para revisão
+
+[Planilha com 115 espécies, quatro tiers e limites por espécie](downloads/Zorykai-Fishing-Tiers-e-Tamanhos.xlsx) · [Critérios, lista e validação](planning/tiers-v1/README.md). Proposta ainda não implementada no mod.

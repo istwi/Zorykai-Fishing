@@ -1,0 +1,116 @@
+﻿Tier;Pokemon;ID;Grupo;Chance %;Minimo m;Base m;Media m;Maximo rigido m;Ambiente
+1;Magikarp;cobblemon:magikarp;Comum;18,666667;0,63;0,9;0,9196;1,5;Lago / rio / margem
+1;Goldeen;cobblemon:goldeen;Comum;9,333333;0,42;0,6;0,6130;1,0;Lago / rio / margem
+1;Poliwag;cobblemon:poliwag;Comum;9,333333;0,42;0,6;0,6130;1,0;Lago / rio / margem
+1;Wooper;cobblemon:wooper;Comum;4,666667;0,28;0,4;0,4290;0,8;Lago / rio / margem
+1;Barboach;cobblemon:barboach;Comum;4,666667;0,28;0,4;0,4290;0,8;Lago / rio / margem
+1;Lotad;cobblemon:lotad;Comum;4,666667;0,35;0,5;0,5363;1,0;Lago / rio / margem
+1;Surskit;cobblemon:surskit;Comum;4,666667;0,35;0,5;0,5363;1,0;Lago / rio / margem
+1;Tympole;cobblemon:tympole;Comum;4,666667;0,35;0,5;0,5363;1,0;Lago / rio / margem
+1;Buizel;cobblemon:buizel;Comum;4,666667;0,49;0,7;0,7203;1,2;Lago / rio / margem
+1;Chewtle;cobblemon:chewtle;Comum;4,666667;0,21;0,3;0,3218;0,6;Lago / rio / margem
+1;Psyduck;cobblemon:psyduck;Incomum;5,000000;0,56;0,8;0,8276;1,4;Lago / rio / margem
+1;Slowpoke;cobblemon:slowpoke;Incomum;5,000000;0,84;1,2;1,2108;1,9;Lago / rio / margem
+1;Finneon;cobblemon:finneon;Incomum;5,000000;0,28;0,4;0,4290;0,8;Mar / águas abertas
+1;Remoraid;cobblemon:remoraid;Incomum;5,000000;0,42;0,6;0,6130;1,0;Mar / águas abertas
+1;Marill;cobblemon:marill;Incomum;5,000000;0,28;0,4;0,4290;0,8;Lago / rio / margem
+1;Azurill;cobblemon:azurill;Raro;1,500000;0,14;0,2;0,2145;0,4;Lago / rio / margem
+1;Tadbulb;cobblemon:tadbulb;Raro;1,500000;0,21;0,3;0,3218;0,6;Lago / rio / margem
+1;Dewpider;cobblemon:dewpider;Raro;1,500000;0,21;0,3;0,3218;0,6;Lago / rio / margem
+1;Feebas;cobblemon:feebas;Especial;0,250000;0,42;0,6;0,6130;1,0;Lago / rio / margem
+1;Squirtle;cobblemon:squirtle;Especial;0,250000;0,35;0,5;0,5363;1,0;Lago / rio / margem
+2;Tentacool;cobblemon:tentacool;Comum;10,000000;0,63;0,9;0,9688;1,5;Mar / águas abertas
+2;Wingull;cobblemon:wingull;Comum;10,000000;0,42;0,6;0,6459;1,0;Mar / águas abertas
+2;Shellder;cobblemon:shellder;Comum;5,000000;0,21;0,3;0,3434;0,6;Costa / praia / águas rasas
+2;Krabby;cobblemon:krabby;Comum;5,000000;0,28;0,4;0,4579;0,8;Costa / praia / águas rasas
+2;Corphish;cobblemon:corphish;Comum;5,000000;0,42;0,6;0,6459;1,0;Lago / rio / margem
+2;Shellos;cobblemon:shellos;Comum;5,000000;0,21;0,3;0,3434;0,6;Lago / rio / margem
+2;Chinchou;cobblemon:chinchou;Comum;5,000000;0,35;0,5;0,5723;1,0;Mar / águas abertas
+2;Horsea;cobblemon:horsea;Comum;5,000000;0,28;0,4;0,4579;0,8;Mar / águas abertas
+2;Arrokuda;cobblemon:arrokuda;Comum;5,000000;0,35;0,5;0,5723;1,0;Mar / águas abertas
+2;Basculin;cobblemon:basculin;Comum;5,000000;0,7;1,0;1,0832;1,7;Mar / águas abertas
+2;Ducklett;cobblemon:ducklett;Comum;5,000000;0,35;0,5;0,5723;1,0;Mar / águas abertas
+2;Poliwhirl;cobblemon:poliwhirl;Comum;5,000000;0,7;1,0;1,0832;1,7;Lago / rio / margem
+2;Seel;cobblemon:seel;Incomum;3,125000;0,77;1,1;1,1568;1,7;Costa / praia / águas rasas
+2;Spheal;cobblemon:spheal;Incomum;3,125000;0,56;0,8;0,8748;1,4;Costa / praia / águas rasas
+2;Staryu;cobblemon:staryu;Incomum;3,125000;0,56;0,8;0,8748;1,4;Costa / praia / águas rasas
+2;Luvdisc;cobblemon:luvdisc;Incomum;3,125000;0,42;0,6;0,6459;1,0;Mar / águas abertas
+2;Clamperl;cobblemon:clamperl;Incomum;3,125000;0,28;0,4;0,4579;0,8;Costa / praia / águas rasas
+2;Clauncher;cobblemon:clauncher;Incomum;3,125000;0,35;0,5;0,5723;1,0;Mar / águas abertas
+2;Skrelp;cobblemon:skrelp;Incomum;3,125000;0,35;0,5;0,5723;1,0;Mar / águas abertas
+2;Wimpod;cobblemon:wimpod;Incomum;3,125000;0,35;0,5;0,5723;1,0;Costa / praia / águas rasas
+2;Wishiwashi;cobblemon:wishiwashi;Raro;0,900000;0,14;0,2;0,2289;0,4;Mar / águas abertas
+2;Pyukumuku;cobblemon:pyukumuku;Raro;0,900000;0,21;0,3;0,3434;0,6;Costa / praia / águas rasas
+2;Binacle;cobblemon:binacle;Raro;0,900000;0,35;0,5;0,5723;1,0;Costa / praia / águas rasas
+2;Qwilfish;cobblemon:qwilfish;Raro;0,900000;0,35;0,5;0,5723;1,0;Mar / águas abertas
+2;Mantyke;cobblemon:mantyke;Raro;0,900000;0,7;1,0;1,0832;1,7;Mar / águas abertas
+2;Bruxish;cobblemon:bruxish;Especial;0,100000;0,63;0,9;0,9688;1,5;Mar / águas abertas
+2;Totodile;cobblemon:totodile;Especial;0,100000;0,42;0,6;0,6459;1,0;Lago / rio / margem
+2;Mudkip;cobblemon:mudkip;Especial;0,100000;0,28;0,4;0,4579;0,8;Lago / rio / margem
+2;Piplup;cobblemon:piplup;Especial;0,100000;0,28;0,4;0,4579;0,8;Lago / rio / margem
+2;Oshawott;cobblemon:oshawott;Especial;0,100000;0,35;0,5;0,5723;1,0;Lago / rio / margem
+3;Seaking;cobblemon:seaking;Comum;12,727273;0,91;1,3;1,4161;2,0;Lago / rio / margem
+3;Quagsire;cobblemon:quagsire;Comum;6,363636;0,98;1,4;1,5367;2,2;Lago / rio / margem
+3;Whiscash;cobblemon:whiscash;Comum;6,363636;0,63;0,9;1,0096;1,5;Lago / rio / margem
+3;Lombre;cobblemon:lombre;Comum;6,363636;0,84;1,2;1,3208;1,9;Lago / rio / margem
+3;Palpitoad;cobblemon:palpitoad;Comum;6,363636;0,56;0,8;0,9144;1,4;Lago / rio / margem
+3;Floatzel;cobblemon:floatzel;Comum;6,363636;0,77;1,1;1,2002;1,7;Lago / rio / margem
+3;Golduck;cobblemon:golduck;Comum;6,363636;1,19;1,7;1,8732;2,7;Lago / rio / margem
+3;Azumarill;cobblemon:azumarill;Comum;6,363636;0,56;0,8;0,9144;1,4;Lago / rio / margem
+3;Lumineon;cobblemon:lumineon;Comum;6,363636;0,84;1,2;1,3208;1,9;Mar / águas abertas
+3;Pelipper;cobblemon:pelipper;Comum;6,363636;0,84;1,2;1,3208;1,9;Mar / águas abertas
+3;Slowbro;cobblemon:slowbro;Incomum;2,083333;1,12;1,6;1,7526;2,5;Lago / rio / margem
+3;Lanturn;cobblemon:lanturn;Incomum;2,083333;0,84;1,2;1,3208;1,9;Mar / águas abertas
+3;Seadra;cobblemon:seadra;Incomum;2,083333;0,84;1,2;1,3208;1,9;Mar / águas abertas
+3;Kingler;cobblemon:kingler;Incomum;2,083333;0,91;1,3;1,4161;2,0;Costa / praia / águas rasas
+3;Crawdaunt;cobblemon:crawdaunt;Incomum;2,083333;0,77;1,1;1,2002;1,7;Lago / rio / margem
+3;Octillery;cobblemon:octillery;Incomum;2,083333;0,63;0,9;1,0096;1,5;Mar / águas abertas
+3;Tentacruel;cobblemon:tentacruel;Incomum;2,083333;1,12;1,6;1,7526;2,5;Mar / águas abertas
+3;Dewgong;cobblemon:dewgong;Incomum;2,083333;1,19;1,7;1,8732;2,7;Costa / praia / águas rasas
+3;Sealeo;cobblemon:sealeo;Incomum;2,083333;0,77;1,1;1,2002;1,7;Costa / praia / águas rasas
+3;Gastrodon;cobblemon:gastrodon;Incomum;2,083333;0,63;0,9;1,0096;1,5;Lago / rio / margem
+3;Drednaw;cobblemon:drednaw;Incomum;2,083333;0,7;1,0;1,1303;1,7;Lago / rio / margem
+3;Barraskewda;cobblemon:barraskewda;Incomum;2,083333;0,91;1,3;1,4161;2,0;Mar / águas abertas
+3;Jellicent;cobblemon:jellicent;Raro;0,750000;1,54;2,2;2,2987;3,0;Mar / águas abertas
+3;Alomomola;cobblemon:alomomola;Raro;0,750000;0,84;1,2;1,3208;1,9;Mar / águas abertas
+3;Basculegion;cobblemon:basculegion;Raro;0,750000;2,1;3,0;3,1623;4,2;Mar / águas abertas
+3;Araquanid;cobblemon:araquanid;Raro;0,750000;1,26;1,8;1,9685;2,8;Lago / rio / margem
+3;Cramorant;cobblemon:cramorant;Raro;0,750000;0,56;0,8;0,9144;1,4;Mar / águas abertas
+3;Vaporeon;cobblemon:vaporeon;Raro;0,750000;0,7;1,0;1,1303;1,7;Lago / rio / margem
+3;Froakie;cobblemon:froakie;Especial;0,125000;0,21;0,3;0,3619;0,6;Lago / rio / margem
+3;Popplio;cobblemon:popplio;Especial;0,125000;0,28;0,4;0,4826;0,8;Lago / rio / margem
+3;Sobble;cobblemon:sobble;Especial;0,125000;0,21;0,3;0,3619;0,6;Lago / rio / margem
+3;Quaxly;cobblemon:quaxly;Especial;0,125000;0,35;0,5;0,6032;1,0;Lago / rio / margem
+4;Poliwrath;cobblemon:poliwrath;Comum;14,000000;0,91;1,3;1,4698;2,0;Lago / rio / margem
+4;Politoed;cobblemon:politoed;Comum;7,000000;0,77;1,1;1,2460;1,7;Lago / rio / margem
+4;Ludicolo;cobblemon:ludicolo;Comum;7,000000;1,05;1,5;1,7243;2,4;Lago / rio / margem
+4;Seismitoad;cobblemon:seismitoad;Comum;7,000000;1,05;1,5;1,7243;2,4;Lago / rio / margem
+4;Slowking;cobblemon:slowking;Comum;7,000000;1,4;2,0;2,2990;3,2;Lago / rio / margem
+4;Walrein;cobblemon:walrein;Comum;7,000000;0,98;1,4;1,5970;2,2;Costa / praia / águas rasas
+4;Mantine;cobblemon:mantine;Comum;14,000000;1,47;2,1;2,2725;2,9;Mar / águas abertas
+4;Barbaracle;cobblemon:barbaracle;Comum;7,000000;0,91;1,3;1,4698;2,0;Costa / praia / águas rasas
+4;Sharpedo;cobblemon:sharpedo;Incomum;3,125000;1,26;1,8;2,0445;2,8;Mar / águas abertas
+4;Huntail;cobblemon:huntail;Incomum;3,125000;1,19;1,7;1,9480;2,7;Mar / águas abertas
+4;Gorebyss;cobblemon:gorebyss;Incomum;3,125000;1,26;1,8;2,0445;2,8;Mar / águas abertas
+4;Clawitzer;cobblemon:clawitzer;Incomum;3,125000;0,91;1,3;1,4698;2,0;Mar / águas abertas
+4;Dragalge;cobblemon:dragalge;Incomum;3,125000;1,26;1,8;2,0445;2,8;Mar / águas abertas
+4;Golisopod;cobblemon:golisopod;Incomum;3,125000;1,4;2,0;2,2990;3,2;Costa / praia / águas rasas
+4;Relicanth;cobblemon:relicanth;Incomum;3,125000;0,7;1,0;1,1803;1,7;Mar / águas abertas
+4;Veluza;cobblemon:veluza;Incomum;3,125000;1,75;2,5;2,7200;3,5;Mar / águas abertas
+4;Gyarados;cobblemon:gyarados;Raro;0,750000;4,55;6,5;6,7645;8,1;Lago / rio / margem
+4;Milotic;cobblemon:milotic;Raro;0,750000;4,34;6,2;6,4442;7,7;Lago / rio / margem
+4;Lapras;cobblemon:lapras;Raro;0,750000;1,75;2,5;2,7200;3,5;Mar / águas abertas
+4;Kingdra;cobblemon:kingdra;Raro;0,750000;1,26;1,8;2,0445;2,8;Mar / águas abertas
+4;Tatsugiri;cobblemon:tatsugiri;Raro;0,750000;0,21;0,3;0,3817;0,6;Mar / águas abertas
+4;Palafin;cobblemon:palafin;Raro;0,750000;0,91;1,3;1,4698;2,0;Mar / águas abertas
+4;Wailord;cobblemon:wailord;Especial;0,045455;10,15;14,5;15,0995;18,1;Mar / águas abertas
+4;Dondozo;cobblemon:dondozo;Especial;0,045455;8,4;12,0;12,5025;15,0;Lago / rio / margem
+4;Greninja;cobblemon:greninja;Especial;0,045455;1,05;1,5;1,7243;2,4;Lago / rio / margem
+4;Primarina;cobblemon:primarina;Especial;0,045455;1,26;1,8;2,0445;2,8;Mar / águas abertas
+4;Feraligatr;cobblemon:feraligatr;Especial;0,045455;1,61;2,3;2,4962;3,2;Lago / rio / margem
+4;Swampert;cobblemon:swampert;Especial;0,045455;1,05;1,5;1,7243;2,4;Lago / rio / margem
+4;Empoleon;cobblemon:empoleon;Especial;0,045455;1,19;1,7;1,9480;2,7;Mar / águas abertas
+4;Blastoise;cobblemon:blastoise;Especial;0,045455;1,12;1,6;1,8208;2,5;Lago / rio / margem
+4;Quaquaval;cobblemon:quaquaval;Especial;0,045455;1,26;1,8;2,0445;2,8;Mar / águas abertas
+4;Inteleon;cobblemon:inteleon;Especial;0,045455;1,33;1,9;2,1718;3,0;Lago / rio / margem
+4;Samurott;cobblemon:samurott;Especial;0,045455;1,05;1,5;1,7243;2,4;Lago / rio / margem
