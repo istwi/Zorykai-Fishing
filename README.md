@@ -1,6 +1,6 @@
-# Zorykai Fishing 0.2.4-beta.1
+# Zorykai Fishing 0.3.0-beta.1
 
-**Downloads:** [JAR 0.2.4-beta.1](https://github.com/istwi/Zorykai-Fishing/raw/refs/heads/main/downloads/Zorykai-Fishing-0.2.4-beta.1.jar) · [Pacote completo](https://github.com/istwi/Zorykai-Fishing/raw/refs/heads/main/downloads/zorykai-fishing-0.2.4-beta.1-completo.zip) · [Configurações](https://github.com/istwi/Zorykai-Fishing/raw/refs/heads/main/downloads/zorykai-fishing-configuracoes.zip).
+**Downloads:** [JAR 0.3.0-beta.1](https://github.com/istwi/Zorykai-Fishing/raw/refs/heads/main/downloads/Zorykai-Fishing-0.3.0-beta.1.jar) · [Pacote completo](https://github.com/istwi/Zorykai-Fishing/raw/refs/heads/main/downloads/zorykai-fishing-0.3.0-beta.1-completo.zip) · [Menu externo atualizado](examples/zorykai-menus/fishing_main.json).
 
 Preserve os seus JSONs e banco ao atualizar.
 
@@ -16,10 +16,12 @@ A versão 0.2.3 adiciona nome do lago com sininho e marcações privadas apenas 
 
 A versão 0.2.4 adiciona `display` no JSON de cada lago, bordas mais visíveis, sinal azul/vermelho na boia e recolhimento/cancelamento livre da vara. Veja [configuração e controles](docs/ATUALIZACAO_0.2.4.md).
 
+A versão 0.3.0 integra a animação nativa de captura, modelos Cobblemon nas varas, ícones 3D de Pokémon e uma nova apresentação das lojas e descrições. Veja [instalação, configuração e limites](docs/ATUALIZACAO_0.3.0.md).
+
 ## Instalação
 
 1. Pare o servidor e faça backup do mundo/configuração.
-2. Coloque somente `Zorykai-Fishing-0.2.4-beta.1.jar` em `mods/`. Remova versões anteriores do Fishing. **Não instale os JARs `checks` ou `dev` no servidor.**
+2. Coloque somente `Zorykai-Fishing-0.3.0-beta.1.jar` em `mods/`. Remova versões anteriores do Fishing. **Não instale os JARs `checks` ou `dev` no servidor.**
 3. Mantenha Fabric API e as dependências habituais do Cobblemon. O JAR incorpora SQLite e Fabric Permissions API. Não precisa instalar Fishing no cliente.
 4. Para dinheiro, use Impactor com a moeda existente `impactor:dollars`. Sem Impactor, pesca, armazenamento e recompensas sem dinheiro continuam disponíveis; operações pagas recusam antes de reservar/débitar.
 5. Integrações opcionais auditadas: Shirokai Trainers, Zorykai Menus, Shirokai Guard e o Multiworld enviado pelo usuário. Os exemplos são instalados **manualmente**, sem sobrescrever a configuração desses mods.

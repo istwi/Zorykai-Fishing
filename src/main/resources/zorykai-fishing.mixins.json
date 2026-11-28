@@ -15,7 +15,8 @@
     "FishingSpawnMixin",
     "FishingBoatMixin",
     "FishingPassengerMixin",
-    "FishingVehicleDropsMixin"
+    "FishingVehicleDropsMixin",
+    "FishingBallAccess"
   ],
   "injectors": {
     "defaultRequire": 1

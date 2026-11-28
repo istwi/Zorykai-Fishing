@@ -1,6 +1,6 @@
-# Validação da beta 0.2.4-beta.1
+# Validação da beta 0.3.0-beta.1
 
-Os relatórios desta entrega são separados da prova de conceito 0.1.0. Os arquivos `024-*.json` em `docs/tests/` registram os ensaios do JAR entregue e seus hashes. O código de teste está em `src/integration` e não faz parte do JAR de produção.
+Os relatórios desta entrega são separados da prova de conceito 0.1.0. Os arquivos `030-*.json` em `docs/tests/` registram os ensaios do JAR entregue e seus hashes. O código de teste está em `src/integration` e não faz parte do JAR de produção.
 
 ## Ambiente
 
@@ -36,6 +36,8 @@ Os testes da 0.2.3 verificam aviso discreto de entrada, sininho privado único, 
 
 A versão 0.2.4 testa compatibilidade de JSONs de área sem display/blocks parciais, cores legacy/hex, duração inválida e envio de subtítulo personalizado com nick e tempo. O runtime verifica brilho branco junto aos pontos coloridos, preservação do limite total, sinal adicional de fisgada e recolhimento antes da fisgada/cancelamento durante a disputa.
 
+A 0.3.0 acrescenta ensaios com ticks reais do mundo atravessando HIT/FALL/SHAKE/CAPTURED e falha, sem Party/PC/evento nativo. Confere trava contra duas bolas e captura direta durante a animação, saída no meio da tentativa, ícones PokemonItem não extraíveis, varas nativas e efeito real do upgrade de resistência. O teste de queda também interrompe uma captura nativa em andamento e confere que a reconexão não a converte em captura concluída. O teste de movimento permite ao dono caminhar dentro do mapa durante a animação. Alguns testes de regressão anteriores avançam o tick da entidade diretamente para concluir a animação; o ensaio novo também a verifica com o mundo efetivamente simulado.
+
 ## Limites da evidência
 
 Não houve cliente gráfico humano nem ensaio no servidor do usuário. Os testes não demonstram latência de rede real, qualidade visual/animação em todos os clientes, escala de centenas de jogadores, interferência de todo o modpack ou todos os provedores de autenticação. Os aliases precisam corresponder ao autenticador efetivamente instalado. A confirmação de permissões foi feita via API Fabric, não por uma instância real de LuckPerms com grupos do usuário.
@@ -44,7 +46,8 @@ O minijogo é dirigido deterministicamente no ensaio: a boia e os eventos são r
 
 Não foi provocado um crash no exato ciclo de CPU de um débito externo. O teste de intenção interrompida persiste esse estado e reinicializa o serviço financeiro. O Impactor não fornece chave idempotente por transação: um resultado monetário desconhecido requer conferência administrativa, não uma suposição automática.
 
-Os avisos de autenticação pública indisponível, gerador flat e metadados `.old` para perfis artificiais recém-criados pertencem ao runtime isolado e constam nos logs. Falhas de assertiva são registradas como `passed:false`, nunca omitidas como sucesso. Consulte somente os relatórios 024 finais vinculados ao hash da entrega para o resultado final; execuções intermediárias são mantidas separadamente no workspace.
+Os avisos de autenticação pública indisponível, gerador flat e metadados `.old` para perfis artificiais recém-criados pertencem ao runtime isolado e constam nos logs. Falhas de assertiva são registradas como `passed:false`, nunca omitidas como sucesso. Consulte somente os relatórios 030 finais vinculados ao hash da entrega para o resultado final; execuções intermediárias são mantidas separadamente no workspace.
+
 
 
 
@@ -56,8 +59,8 @@ Compilação concluída com sucesso. JUnit: **25 testes, zero falhas**.
 
 | Runtime Fabric | Verificações | Falhas |
 |---|---:|---:|
-| standalone | 121 | 0 |
-| integrated | 142 | 0 |
-| crash | 6 | 0 |
+| standalone | 141 | 0 |
+| integrated | 162 | 0 |
+| crash | 7 | 0 |
 
-As contagens de runtimes incluem cenários repetidos entre ambientes. Não são 269 funcionalidades independentes. Todos os runtimes usaram exatamente o JAR com SHA-256 `7c3d03c88e21ea8da748c35c55c4a64678613e4c687bcde29656739467a0f8c4`.
+As contagens de runtimes incluem cenários repetidos entre ambientes. Não são 310 funcionalidades independentes. Todos os runtimes usaram exatamente o JAR com SHA-256 `fa6d37024ff1657f975eb92bef917e54e6120421b19e86500addcfebea00090f`.

@@ -1,51 +1,68 @@
 {
   "id": "fishing_main",
-  "title": "<aqua>✦ ZORYKAI · Pesca",
+  "title": "<blue>Zorykai <dark_gray>» <white>Expedição de Pesca",
   "size": 54,
   "buttons": [
     {
       "id": "entrar",
       "slots": [
-        9
+        10
       ],
       "icon": {
-        "id": "minecraft:fishing_rod"
+        "id": "cobblemon:poke_rod"
       },
-      "name": "<aqua>Entrar na pesca",
+      "name": "<blue>Iniciar Expedição</blue>",
       "actions": [
         {
           "type": "zorykai_fishing:entrar"
         }
+      ],
+      "lore": [
+        "<gray><italic>Novas margens aguardam sua história.</italic></gray>",
+        "<gray><italic>Seu equipamento volta ao sair.</italic></gray>",
+        "",
+        "<yellow>Clique para abrir.</yellow>"
       ]
     },
     {
       "id": "sair",
       "slots": [
-        10
+        11
       ],
       "icon": {
         "id": "minecraft:oak_door"
       },
-      "name": "<aqua>Sair e restaurar inventário",
+      "name": "<blue>Voltar para Casa</blue>",
       "actions": [
         {
           "type": "zorykai_fishing:sair"
         }
+      ],
+      "lore": [
+        "<gray><italic>Leve suas memórias de volta ao cais.</italic></gray>",
+        "",
+        "<yellow>Clique para abrir.</yellow>"
       ]
     },
     {
       "id": "armazem",
       "slots": [
-        11
+        13
       ],
       "icon": {
         "id": "minecraft:chest"
       },
-      "name": "<aqua>Capturas e vendas",
+      "name": "<blue>Coleção de Capturas</blue>",
       "actions": [
         {
           "type": "zorykai_fishing:armazem"
         }
+      ],
+      "lore": [
+        "<gray><italic>Cada captura é um capítulo da jornada.</italic></gray>",
+        "<gray><italic>Confira tamanhos, favoritos e vendas.</italic></gray>",
+        "",
+        "<yellow>Clique para abrir.</yellow>"
       ]
     },
     {
@@ -56,161 +73,219 @@
       "icon": {
         "id": "minecraft:map"
       },
-      "name": "<aqua>Lagos e requisitos",
+      "name": "<blue>Mapa dos Lagos</blue>",
       "actions": [
         {
           "type": "zorykai_fishing:areas"
         }
+      ],
+      "lore": [
+        "<gray><italic>Descubra onde lançar sua próxima linha.</italic></gray>",
+        "<gray><italic>Consulte os requisitos de cada lago.</italic></gray>",
+        "",
+        "<yellow>Clique para abrir.</yellow>"
       ]
     },
     {
       "id": "varas",
       "slots": [
-        13
+        19
       ],
       "icon": {
-        "id": "minecraft:fishing_rod"
+        "id": "cobblemon:poke_rod"
       },
-      "name": "<aqua>Varas",
+      "name": "<blue>Arsenal de Varas</blue>",
       "actions": [
         {
           "type": "zorykai_fishing:varas"
         }
+      ],
+      "lore": [
+        "<gray><italic>Da primeira vara às grandes descobertas.</italic></gray>",
+        "<gray><italic>Escolha sua companheira de aventuras.</italic></gray>",
+        "",
+        "<yellow>Clique para abrir.</yellow>"
       ]
     },
     {
       "id": "iscas",
       "slots": [
-        14
+        20
       ],
       "icon": {
         "id": "minecraft:wheat_seeds"
       },
-      "name": "<aqua>Iscas",
+      "name": "<blue>Caixa de Iscas</blue>",
       "actions": [
         {
           "type": "zorykai_fishing:iscas"
         }
+      ],
+      "lore": [
+        "<gray><italic>Uma nova história espera nas águas de Zorykai.</italic></gray>",
+        "",
+        "<yellow>Clique para abrir.</yellow>"
       ]
     },
     {
       "id": "bolas",
       "slots": [
-        15
+        21
       ],
       "icon": {
         "id": "cobblemon:poke_ball"
       },
-      "name": "<aqua>Bolas de pesca",
+      "name": "<blue>Poké Bolas de Pesca</blue>",
       "actions": [
         {
           "type": "zorykai_fishing:bolas"
         }
+      ],
+      "lore": [
+        "<gray><italic>Uma nova história espera nas águas de Zorykai.</italic></gray>",
+        "",
+        "<yellow>Clique para abrir.</yellow>"
       ]
     },
     {
       "id": "melhorias",
       "slots": [
-        16
+        22
       ],
       "icon": {
         "id": "minecraft:anvil"
       },
-      "name": "<aqua>Melhorias",
+      "name": "<blue>Oficina do Pescador</blue>",
       "actions": [
         {
           "type": "zorykai_fishing:melhorias"
         }
+      ],
+      "lore": [
+        "<gray><italic>A oficina prepara você para novos desafios.</italic></gray>",
+        "<gray><italic>Aprimore a vara que está equipada.</italic></gray>",
+        "",
+        "<yellow>Clique para abrir.</yellow>"
       ]
     },
     {
       "id": "tempo",
       "slots": [
-        17
+        24
       ],
       "icon": {
         "id": "minecraft:clock"
       },
-      "name": "<aqua>Comprar tempo",
+      "name": "<blue>Tempo de Expedição</blue>",
       "actions": [
         {
           "type": "zorykai_fishing:tempo"
         }
+      ],
+      "lore": [
+        "<gray><italic>Uma nova história espera nas águas de Zorykai.</italic></gray>",
+        "",
+        "<yellow>Clique para abrir.</yellow>"
       ]
     },
     {
       "id": "missoes",
       "slots": [
-        18
+        23
       ],
       "icon": {
         "id": "minecraft:book"
       },
-      "name": "<aqua>Missões",
+      "name": "<blue>Pedidos da Vila</blue>",
       "actions": [
         {
           "type": "zorykai_fishing:missoes"
         }
+      ],
+      "lore": [
+        "<gray><italic>Uma nova história espera nas águas de Zorykai.</italic></gray>",
+        "",
+        "<yellow>Clique para abrir.</yellow>"
       ]
     },
     {
       "id": "torneios",
       "slots": [
-        19
+        28
       ],
       "icon": {
         "id": "minecraft:gold_ingot"
       },
-      "name": "<aqua>Torneios",
+      "name": "<blue>Desafios das Marés</blue>",
       "actions": [
         {
           "type": "zorykai_fishing:torneios"
         }
+      ],
+      "lore": [
+        "<gray><italic>Uma nova história espera nas águas de Zorykai.</italic></gray>",
+        "",
+        "<yellow>Clique para abrir.</yellow>"
       ]
     },
     {
       "id": "conquistas",
       "slots": [
-        20
+        25
       ],
       "icon": {
         "id": "minecraft:golden_apple"
       },
-      "name": "<aqua>Conquistas",
+      "name": "<blue>Marcas de uma Jornada</blue>",
       "actions": [
         {
           "type": "zorykai_fishing:conquistas"
         }
+      ],
+      "lore": [
+        "<gray><italic>Uma nova história espera nas águas de Zorykai.</italic></gray>",
+        "",
+        "<yellow>Clique para abrir.</yellow>"
       ]
     },
     {
       "id": "perfil",
       "slots": [
-        21
+        14
       ],
       "icon": {
         "id": "minecraft:name_tag"
       },
-      "name": "<aqua>Meu perfil",
+      "name": "<blue>Diário do Pescador</blue>",
       "actions": [
         {
           "type": "zorykai_fishing:perfil"
         }
+      ],
+      "lore": [
+        "<gray><italic>Uma nova história espera nas águas de Zorykai.</italic></gray>",
+        "",
+        "<yellow>Clique para abrir.</yellow>"
       ]
     },
     {
       "id": "recarga",
       "slots": [
-        22
+        40
       ],
       "icon": {
         "id": "minecraft:clock"
       },
-      "name": "<aqua>Recarga das bolas",
+      "name": "<blue>Recarga Acelerada</blue>",
       "actions": [
         {
           "type": "zorykai_fishing:recarga"
         }
+      ],
+      "lore": [
+        "<gray><italic>Prepare a próxima Poké Bola mais rápido.</italic></gray>",
+        "",
+        "<yellow>Clique para abrir.</yellow>"
       ]
     }
   ]

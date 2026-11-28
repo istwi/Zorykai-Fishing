@@ -20,3 +20,5 @@ Na 0.2.2, o novo `minigame.json` é gerado automaticamente. Veja `ATUALIZACAO_0.
 Na 0.2.3, `area-feedback.json` controla aviso/sino e indicação da borda na água. Consulte `ATUALIZACAO_0.2.3.md`; não amplie os limites do lago para desenhar partículas.
 
 Na 0.2.4, o bloco `display` no JSON da área configura texto, cores e duração. Recolha a vara antes da fisgada clicando novamente ou cancele com Shift + clique direito. Veja `ATUALIZACAO_0.2.4.md`.
+
+A 0.3.0 preserva os IDs das varas, upgrades e dados, adicionando modelos nativos e captura animada. Veja `ATUALIZACAO_0.3.0.md`; troque o JAR com o servidor parado.

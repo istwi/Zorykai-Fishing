@@ -66,6 +66,7 @@ public final class FishingInteractionChecks {
   check("Cooldown sends filling action bar and native overlay, without boss bar",net.packets.stream().anyMatch(packet->packet instanceof CooldownUpdateS2CPacket)&&net.packets.stream().anyMatch(packet->packet instanceof GameMessageS2CPacket message&&message.overlay()&&message.content().getString().contains("IIIIIIIIIIIIIIIIIIII"))&&net.packets.stream().noneMatch(packet->packet instanceof BossBarS2CPacket));
   var projectile=(EmptyPokeBallEntity)java.util.stream.StreamSupport.stream(p.getServerWorld().iterateEntities().spliterator(),false).filter(e->e instanceof EmptyPokeBallEntity ball&&ball.getOwner()==p).findFirst().orElseThrow();
   for(var method:projectile.getClass().getDeclaredMethods())if(Arrays.equals(method.getParameterTypes(),new Class[]{EntityHitResult.class})){method.setAccessible(true);method.invoke(projectile,new EntityHitResult(encounter.entity()));break;}
+  check("Animated hit keeps encounter pending until the native sequence finishes",m.store.captures(p.getUuid()).isEmpty()&&projectile.getCaptureState()==EmptyPokeBallEntity.CaptureState.HIT);FishingAnimationChecks.finishBall(projectile);
   check("Projectile hit records exactly one capture and retains reusable icon",m.store.captures(p.getUuid()).size()==1&&p.getMainHandStack().getCount()==1&&encounter.entity().isRemoved());
   // A second owner cannot mount this session's boat, including through startRiding(force).
   p.getInventory().selectedSlot=2;p.setPitch(30);p.setYaw(0);m.engine.equipment.useBoat(p);
