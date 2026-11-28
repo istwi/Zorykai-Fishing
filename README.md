@@ -202,3 +202,7 @@ A entrega é beta: os ensaios usam servidor Fabric real e jogadores simulados, n
 ## Proposta de tiers e tamanhos para revisão
 
 [Planilha com 115 espécies, quatro tiers e limites por espécie](downloads/Zorykai-Fishing-Tiers-e-Tamanhos.xlsx) · [Critérios, lista e validação](planning/tiers-v1/README.md). Proposta ainda não implementada no mod.
+
+## Proposta das seis áreas e dificuldade para revisão
+
+[Planilha com os seis lagos, 115 espécies e simulação do minigame](downloads/Zorykai-Fishing-6-Areas-e-Dificuldade.xlsx) · [Regras, cálculos e validação](planning/areas-v2/README.md). Esta proposta ainda não foi aplicada ao JAR.

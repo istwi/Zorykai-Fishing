@@ -1,0 +1,38 @@
+{
+  "species": 115,
+  "uniqueSpecies": 115,
+  "allOriginalSpeciesCovered": true,
+  "areas": {
+    "1": {
+      "count": 19,
+      "chanceSum": 100.0
+    },
+    "2": {
+      "count": 19,
+      "chanceSum": 100.0
+    },
+    "3": {
+      "count": 19,
+      "chanceSum": 100.0
+    },
+    "4": {
+      "count": 19,
+      "chanceSum": 100.0
+    },
+    "5": {
+      "count": 19,
+      "chanceSum": 100.0
+    },
+    "6": {
+      "count": 20,
+      "chanceSum": 100.0
+    }
+  },
+  "sizeProfilesSum100": true,
+  "naturalSpawnsDisabledInFishingDimension": true,
+  "boundaryParticles": false,
+  "runtimeChanged": false,
+  "proposalOnly": true,
+  "cobblemonVersion": "1.8.3+1.21.1",
+  "cobblemonJarSha256": "4bc3b09d25b93b74a5822dc35b06bd6f5fa8bae36ed43a8d2b3904156a61269c"
+}
